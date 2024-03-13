@@ -11,6 +11,7 @@ import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
+import Statistical from './components/Statistical';
 
 const App = () => {
   // animate on scroll initialization
@@ -21,6 +22,8 @@ const App = () => {
   return (
     <div className="overflow-hidden">
       <Hero />
+      
+      <Statistical/>
       {/* <About />
       <Features />
       <Testimonials />
