@@ -1,26 +1,53 @@
-import React from 'react';
-
-import {statisticalData} from '../data';
+import React from "react";
+import CountUp from "react-countup";
+import { statisticalData } from "../data";
 
 const Statistical = () => {
   // destructure hero
-  const  {title, subtitle, image} = statisticalData;
+  const { title, subtitle, image } = statisticalData;
   return (
-    <section className="flex justify-center">
-    {
-      statisticalData.map((item, index) => {
-        return (
-          <div className="flex items-center mr-5 p-5 bg-gray-200 rounded-lg" key={index}>
-            <img src={item.image} alt="logo" className="w-10 h-10"/>
+    <>
+      <section
+        className="flex justify-center p-5 bg-gray-200 border hidden md:flex"
+        style={{
+          marginLeft: "15%",
+          marginRight: "15%",
+          borderTopLeftRadius: "5rem",
+          borderBottomLeftRadius: "5rem",
+          borderTopRightRadius: "5rem",
+          borderBottomRightRadius: "5rem",
+        }}
+      >
+        {statisticalData.map((item, index) => {
+          return (
+            <div className="flex items-center " key={index}>
+              <img src={item.image} alt="logo" className="w-10 h-10" />
+              <div>
+                <div className="text-lg font-bold">
+                  <CountUp end={item.title} />+
+                </div>
+                <div>{item.subtitle}</div>
+              </div>
+            </div>
+          );
+        })}
+      </section>
+      <section className="flex flex-wrap justify-center bg-gray-200 border block md:hidden">
+        {/* đừng line màu trắng */}
+        <div className="w-full h-[1px] bg-white"></div>
+        {statisticalData.map((item, index) => (
+          <div className="flex items-center w-1/3" key={index}>
+            <img src={item.image} alt="logo" className="w-10 h-10" />
             <div>
-              <div className="text-lg font-bold">{item.title}</div>
-              <div>{item.subtitle}</div>
+              <div className="text-xs font-bold text-gray-500">
+                <CountUp end={item.title} />+
+              </div>
+              <div className=" text-xs text-gray-500">{item.subtitle}</div>
             </div>
           </div>
-        )
-      })
-    }
-  </section>
+        ))}
+      </section>
+    </>
   );
 };
 export default Statistical;

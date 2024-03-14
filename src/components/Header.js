@@ -15,15 +15,15 @@ const Header = () => {
     <header
       className="mb-12 lg:mb-0 z-20 fixed w-full top-0 px-4 lg:px-0 py-4 lg:py-8"
       style={{ backgroundColor: "white" }}
-      data-aos="fade-down"
-      data-aos-delay="1200"
-      data-aos-duration="1000"
+      // data-aos="fade-down"
+      // data-aos-delay="1200"
+      // data-aos-duration="1000"
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-[120px]">
             {/* logo */}
-            <a href="#">
+            <a href="/">
               <img src={Logo} alt="" />
             </a>
 

@@ -28,31 +28,31 @@ import product from '../src/assets/img/giay.png';
 export const navigationData = [
   {
     name: "Thông tin",
-    href: "#",
+    href: "/thong_tin",
   },
   {
     name: "Giới thiệu",
-    href: "#",
+    href: "/gioi_thieu",
   },
   {
     name: "Skin Care Scan",
-    href: "#",
+    href: "/skin_care_scan",
   },
   {
     name: "Cam kết",
-    href: "#",
+    href: "/cam ket",
   },
   {
     name: "Review",
-    href: "#",
+    href: "/review",
   },
   {
     name: "Bí quyết chăm sóc da",
-    href: "#",
+    href: "/bi_quyet_cham_soc_da",
   },
   {
     name: "Liên hệ",
-    href: "#",
+    href: "/lien_he",
   },
 ];
 
@@ -61,39 +61,65 @@ export const heroData = {
   title2: `Chỉ trong 7s`,
   subtitle:
     "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
-  btnText: "Trải nghiệm ngày",
+  btnText: "Trải nghiệm ngay",
   image: HeroImage,
   image2: QRImage,
 };
 
 export const statisticalData = [
   {
-    title: "2,000+",
+    title: "2000",
     subtitle: "Số người dùng trải nghiệm",
-  image: user
+    image: user,
   },
   {
     title: "500",
     subtitle: "Bác sĩ cho lời khuyên về da",
-  image: bacsi
+    image: bacsi,
   },
   {
-    title: "2,000+",
+    title: "2000",
     subtitle: "Nghiên cứu và Ứng dụng",
-  image: light
+    image: light,
   },
   {
-    title: "4,5000,000+",
+    title: "45000000",
     subtitle: "Hình ảnh được xử lý chuẩn đoán phân tích",
-   image: image
+    image: image,
   },
   {
-    title: "20+",
+    title: "20",
     subtitle: "Sản phẩm cấp bằng sáng chế",
-   image: product
+    image: product,
   },
-]
+];
 
+export const contentInfoData = [
+  {
+    image: user,
+    title: "Da Mụn",
+  },
+  {
+    image: user,
+    title: "Da Khô",
+  },
+  {
+    image: user,
+    title: "Da Dầu",
+  },
+  {
+    image: user,
+    title: "Da Nhạy Cảm",
+  },
+  {
+    image: user,
+    title: "Da Lão Hóa",
+  },
+  {
+    image: user,
+    title: "Da Thường",
+  },
+];
 export const aboutData = {
   image: AboutImg,
   title: "Find Out A Little More About Us",
