@@ -107,19 +107,41 @@ export const contentInfoData = [
     image: user,
     title: "Da Dầu",
   },
+  // {
+  //   image: user,
+  //   title: "Da Nhạy Cảm",
+  // },
+  // {
+  //   image: user,
+  //   title: "Da Lão Hóa",
+  // },
+  // {
+  //   image: user,
+  //   title: "Da Thường",
+  // },
+];
+
+export const productInfoData = [
   {
-    image: user,
-    title: "Da Nhạy Cảm",
+    image: 'https://via.placeholder.com/200x300',
+    title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
   {
-    image: user,
-    title: "Da Lão Hóa",
+    image: 'https://via.placeholder.com/200x300',
+    title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
   {
-    image: user,
-    title: "Da Thường",
+    image: 'https://via.placeholder.com/200x300',
+    title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
+  },
+  {
+    image: 'https://via.placeholder.com/200x300',
+    title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
 ];
+
+
+
 export const aboutData = {
   image: AboutImg,
   title: "Find Out A Little More About Us",

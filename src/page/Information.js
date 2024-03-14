@@ -12,6 +12,8 @@ import Nav from "../components/Nav";
 import Banner from "../components/Banner";
 import { footerData, navigationData } from "../data";
 import Content from "../components/Info/Content";
+import Product from "../components/Info/Product";
+import News from "../components/Info/News";
 
 const Information = () => {
   return (
@@ -19,6 +21,8 @@ const Information = () => {
       <Banner />
       <Statistical />
       <Content />
+      <Product/>
+      <News />
       <Footer />
     </div>
   );

@@ -38,6 +38,9 @@
   .h3 {
     @apply text-[24px];
   }
+  .h3-2 {
+    @apply text-[24px] font-bold leading-tight;
+  }
   .lead {
     @apply text-lg text-secondary font-secondary font-medium leading-relaxed;
   }
