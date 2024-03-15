@@ -17,6 +17,7 @@ import Home from "./page/Home";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Information from "./page/Information";
+import News from "./page/News";
 
 const App = () => {
   // animate on scroll initialization
@@ -32,6 +33,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/thong_tin" element={<Information />} />
+          <Route path="/bi_quyet_cham_soc_da" element={<News />} />
         </Routes>
       </div>
     </Router>

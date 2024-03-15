@@ -10,7 +10,6 @@ import Footer from "../components/Footer";
 import Statistical from "../components/Statistical";
 import Nav from "../components/Nav";
 import Banner2 from "../components/Banner2";
-import { footerData, navigationData } from "../data";
 import Content from "../components/Info/Content";
 import Product from "../components/Info/Product";
 import News from "../components/Info/News";

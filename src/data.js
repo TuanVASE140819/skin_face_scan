@@ -47,8 +47,16 @@ import Rule2 from "../src/assets/img/infor/Icon/Icon2.png";
 import Rule3 from "../src/assets/img/infor/Icon/Icon3.png";
 import Rule4 from "../src/assets/img/infor/Icon/Icon4.png";
 
+
+
+import Model4 from "../src/assets/img/model/model4.png";
+import Model5 from "../src/assets/img/model/model5.png";
+import Model6 from "../src/assets/img/model/model6.png";
+
 // InforBanner
 import InforBannerImg from "../src/assets/img/model/model_banner.png";
+
+// About
 
 export const navigationData = [
   {
@@ -215,6 +223,27 @@ export const ruleData = [
   },
 ];
 
+export const KeywordData = [
+  {
+    title: "Lorem Ipsum",
+  },
+  {
+    title: "Serum",
+  },
+  {
+    title: "Collagen",
+  },
+  {
+    title: "Lorem Ipsum",
+  },
+  {
+    title: "Ipsum",
+  },
+  {
+    title: "Lorem",
+  },
+];
+
 export const aboutData = {
   image: AboutImg,
   title: "Find Out A Little More About Us",
@@ -306,6 +335,39 @@ export const ctaData = {
   btnText1: "Learn more",
   btnText2: "Request Demo",
 };
+
+export const NewsTwoData = [
+  {
+    tag: "#Lorem Ipsum",
+    image: Model4,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    tag: "#Lorem Ipsum",
+    image: Model5,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    tag: "#Lorem Ipsum",
+    image: Model6,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+];
 
 export const footerData = {
   logo: LogoV2,
