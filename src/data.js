@@ -13,17 +13,42 @@ import Avatar2Img from '../src/assets/img/testimonials/avatar2.png';
 import Avatar3Img from '../src/assets/img/testimonials/avatar3.png';
 import LogoV2 from '../src/assets/img/logo-v2.png';
 import HeroImage from '../src/assets/img/aigirl.png';
-import Feature1BgImg from '../src/assets/img/features/feature1_bg.png';
-import Feature2BgImg from '../src/assets/img/features/feature2_bg.png';
-import Feature3BgImg from '../src/assets/img/features/feature3_bg.png';
-import Feature4BgImg from '../src/assets/img/features/feature4_bg.png';
-import QRImage from '../src/assets/img/Qr.png';
-import user from '../src/assets/img/human.png';
-import bacsi from '../src/assets/img/human2.png';
-import light from '../src/assets/img/den.png';
-import image from '../src/assets/img/hinh.png';
-import product from '../src/assets/img/giay.png';
+import InforImage from "../src/assets/img/inforindex.png";
+import Feature1BgImg from "../src/assets/img/features/feature1_bg.png";
+import Feature2BgImg from "../src/assets/img/features/feature2_bg.png";
+import Feature3BgImg from "../src/assets/img/features/feature3_bg.png";
+import Feature4BgImg from "../src/assets/img/features/feature4_bg.png";
+import QRImage from "../src/assets/img/Qr.png";
+import user from "../src/assets/img/human.png";
+import bacsi from "../src/assets/img/human2.png";
+import light from "../src/assets/img/den.png";
+import image from "../src/assets/img/hinh.png";
+import product from "../src/assets/img/giay.png";
 
+// model 1
+import Model1 from "../src/assets/img/model/model1.png";
+import Model2 from "../src/assets/img/model/model2.png";
+import Model3 from "../src/assets/img/model/model3.png";
+
+//product
+import Product1 from "../src/assets/img/infor/product1.png";
+import Product2 from "../src/assets/img/infor/product2.png";
+import Product3 from "../src/assets/img/infor/product3.png";
+import Product4 from "../src/assets/img/infor/product4.png";
+
+//news
+import News1 from "../src/assets/img/News/New1.png";
+import News2 from "../src/assets/img/News/New2.png";
+import News3 from "../src/assets/img/News/New3.png";
+
+//rule
+import Rule1 from "../src/assets/img/infor/Icon/Icon1.png";
+import Rule2 from "../src/assets/img/infor/Icon/Icon2.png";
+import Rule3 from "../src/assets/img/infor/Icon/Icon3.png";
+import Rule4 from "../src/assets/img/infor/Icon/Icon4.png";
+
+// InforBanner
+import InforBannerImg from "../src/assets/img/model/model_banner.png";
 
 export const navigationData = [
   {
@@ -66,6 +91,16 @@ export const heroData = {
   image2: QRImage,
 };
 
+export const infoData = {
+  title: `Chuẩn Đoán Tình Trạng Da`,
+  title2: `Chỉ trong 7s`,
+  subtitle:
+    "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
+  btnText: "Trải nghiệm ngay",
+  image: InforImage,
+  image2: QRImage,
+};
+
 export const statisticalData = [
   {
     title: "2000",
@@ -96,57 +131,105 @@ export const statisticalData = [
 
 export const contentInfoData = [
   {
-    image: user,
+    image: Model1,
     title: "Da Mụn",
   },
   {
-    image: user,
+    image: Model2,
     title: "Da Khô",
   },
   {
-    image: user,
+    image: Model3,
     title: "Da Dầu",
   },
-  // {
-  //   image: user,
-  //   title: "Da Nhạy Cảm",
-  // },
-  // {
-  //   image: user,
-  //   title: "Da Lão Hóa",
-  // },
-  // {
-  //   image: user,
-  //   title: "Da Thường",
-  // },
+];
+
+export const contentNewsData = [
+  {
+    image: News1,
+    tag: "#Mụn #Da",
+    title: "Tác dụng phụ của retinol: Lời khuyên hiểu quả cho chăm sóc da",
+    content:
+      "Bài viết Retinol cho da nhạy cảm sẽ giúp bạn hiểu rõ hơn về retinol, cách sử dụng và lợi ích của retinol cho da nhạy cảm.",
+    date: "23/02/2024",
+    customerName: "Diễm Nguyễn",
+    avatar: "https://via.placeholder.com/150",
+  },
+  {
+    image: News2,
+    tag: "#Mụn #Da",
+    title: "Chăm sóc da nhạy cảm hiệu quả với retinol: hướng dẫn đầy đủ",
+    content:
+      "Bài viết Retinol cho da nhạy cảm sẽ giúp bạn hiểu rõ hơn về retinol, cách sử dụng và lợi ích của retinol cho da nhạy cảm.",
+    date: "23/02/2024",
+    customerName: "Diễm Nguyễn",
+    avatar: "https://via.placeholder.com/150",
+  },
+  {
+    image: News3,
+    tag: "#Mụn #Da",
+    title: "Retinol cho nếp nhăn: cách sử dụng và lợi ích da",
+    content:
+      "Bài viết Retinol cho da nhạy cảm sẽ giúp bạn hiểu rõ hơn về retinol, cách sử dụng và lợi ích của retinol cho da nhạy cảm.",
+    date: "23/02/2024",
+    customerName: "Diễm Nguyễn",
+    avatar: "https://via.placeholder.com/150",
+  },
 ];
 
 export const productInfoData = [
   {
-    image: 'https://via.placeholder.com/200x300',
+    image: Product1,
     title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
   {
-    image: 'https://via.placeholder.com/200x300',
+    image: Product2,
     title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
   {
-    image: 'https://via.placeholder.com/200x300',
+    image: Product3,
     title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
   {
-    image: 'https://via.placeholder.com/200x300',
+    image: Product4,
     title: "Mặt Nạ Kem CKD Retinol Collagen Tiểu Phân Tử 50g",
   },
 ];
 
-
+export const ruleData = [
+  {
+    image: Rule1,
+    title: "Đảm Bảo",
+  },
+  {
+    image: Rule2,
+    title: "Bảo Mật Thông Tin",
+  },
+  {
+    image: Rule3,
+    title: "Phát Triển Công Nghệ Mới Nhất",
+  },
+  {
+    image: Rule4,
+    title: "Trải Nghiệm",
+  },
+];
 
 export const aboutData = {
   image: AboutImg,
   title: "Find Out A Little More About Us",
   subtitle:
     "We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of delivery.",
+};
+
+export const InforBanner = {
+  image: InforBannerImg,
+  title1: "Hơn",
+  title2: "65 Triệu",
+  title3: "hình ảnh dữ liệu từ GOOGLE và dữ liệu thu thập từ data thực tế",
+
+  subtitle:
+    "Dữ liệu về tình trạng làn da, 288 triệu hình ảnh khác nhau về sức khỏe làn da, do người dùng cung cấp và nguồn từ google. hơn 10 tỷ mỗi năm",
 };
 
 export const featuresData = {

@@ -9,19 +9,22 @@ import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import Statistical from "../components/Statistical";
 import Nav from "../components/Nav";
-import Banner from "../components/Banner";
+import Banner2 from "../components/Banner2";
 import { footerData, navigationData } from "../data";
 import Content from "../components/Info/Content";
 import Product from "../components/Info/Product";
 import News from "../components/Info/News";
+import Rule from "../components/Info/Rule";
 
 const Information = () => {
   return (
     <div className="overflow-hidden">
-      <Banner />
+      <Banner2 />
       <Statistical />
       <Content />
-      <Product/>
+      <Product />
+      <Rule />
+      <About />
       <News />
       <Footer />
     </div>

@@ -21,34 +21,32 @@ const Content = () => {
   return (
     <section>
       <div className="p-8 container mx-auto">
-   
-              {/* title */}
-              <h1 className="h3-2 text-center">
-  Chăm Sóc Sức Khỏe
-</h1>
+        {/* title */}
+        <h1 className="h3-2 text-center">Chăm Sóc Sức Khỏe</h1>
 
-<h1 className="h3-2 text-orange-500 text-center">
-  Làn Da Tốt Nhất Cho Mọi Loại Da
-</h1>
+        <h1 className="h3-2 text-orange-500 text-center">
+          Làn Da Tốt Nhất Cho Mọi Loại Da
+        </h1>
 
         <Slider {...settings}>
           {contentInfoData.map((item, index) => (
             <div className="p-8" key={index}>
               <div className="rounded overflow-hidden shadow-lg zoom">
                 <img
-                  className="w-full"
+                  className="w-96 h-96 object-cover"
                   src={
                     item.image ? item.image : "https://via.placeholder.com/300"
                   }
-                  alt="Sunset in the mountains"
+                  alt={item.title}
                 />
-                <div className="flex items-center justify-between pb-5 pr-2 pl-2">
+                <div className="flex items-center justify-between pb-5 pr-2 pl-2 pt-5">
                   <div className="font-bold text-xl mb-2">{item.title}</div>
                   <button className=" btn-primary flex items-center px-4 py-2 rounded-full">
                     <div className="font-bold text-sm text-white">Khám phá</div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 ml-2 text-white"s
+                      className="h-6 w-6 ml-2 text-white"
+                      s
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

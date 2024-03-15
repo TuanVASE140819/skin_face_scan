@@ -21,7 +21,7 @@ const Footer = () => {
     socialList,
   } = footerData;
   return (
-    <footer>
+    <footer className="mt-20">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row text-center xl:text-left gap-y-12">
           {/* info */}

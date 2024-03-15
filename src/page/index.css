@@ -21,3 +21,16 @@
 .ripple {
     animation: ripple 2s infinite;
 }
+
+.container-product {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; */
+
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}

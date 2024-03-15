@@ -3,50 +3,97 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import about data
-import { aboutData, contentInfoData } from "../../data";
+import { contentNewsData } from "../../data";
+
+import Next from "../../../src/assets/img/button/next.png";
+import Prev from "../../../src/assets/img/button/prev.png";
 
 const News = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
+  const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src={Next}
+        alt="next"
+        className={className}
+        style={{ ...style, display: "block", width: "50px", height: "50px" }}
+        onClick={onClick}
+      />
+    );
+  };
 
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src={Prev}
+        alt="prev"
+        className={className}
+        style={{ ...style, display: "block", width: "50px", height: "50px" }}
+        onClick={onClick}
+      />
+    );
+  };
   const settings = {
     // dots: true,
     infinite: true,
     speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
- 
-    autoplay: true,
-    autoplaySpeed: 2000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
+
   return (
     <section>
-      <div className="pl-8 pr-8 mx-auto">
-   
-              {/* title */}
-              <h1 className="h3-2 text-center">
-  Hiểu Làn Da Của Bạn Hơn
-</h1>
-
+      <div className=" mx-auto container-product">
+        {/* title */}
+        <h1 className="h3-2 text-center">Hiểu Làn Da Của Bạn Hơn</h1>
 
         <Slider {...settings}>
-          {contentInfoData.map((item, index) => (
-        
-           <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100  mb-4 md:mb-0 md:mr-0"
-           key={index}>
-    <img class="w-full border-b border-r" 
-     src={"https://via.placeholder.com/600x300"}
-     alt=""/>
-    <div class="flex flex-col justify-between p-4 leading-normal">
-       
-            <div class="mb-2 text-sm text-primary1">
-                #Acquisit
-        </div>
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
-        <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    </div>
-</a>
-          
+          {contentNewsData.map((item, index) => (
+            <div className="p-8" key={index}>
+              <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow ">
+                <img
+                  class="w-full border-b border-r"
+                  src={
+                    item.image ? item.image : "https://via.placeholder.com/300"
+                  }
+                  alt={item.title}
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <div class="mb-2 text-sm text-primary1">{item.tag}</div>
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    {item.title.length > 40
+                      ? item.title.substring(0, 40) + "..."
+                      : item.title}
+                  </h5>
+                  <p class="mb-3 font-normal text-gray-700">
+                    {item.content.length > 100
+                      ? item.content.substring(0, 100) + "..."
+                      : item.content}
+                  </p>
+                  {/* avatar và date */}
+                  <div class="flex items first-letter:capitalize">
+                    <img
+                      class="w-10 h-10 rounded-full"
+                      src={item.avatar}
+                      alt="Avatar of Jonathan Reinink"
+                    />
+                    <div class="flex flex-col ml-2">
+                      <p class="text-sm font-semibold text-gray-900">
+                        {item.customerName}
+                      </p>
+                      <p class="text-xs font-normal text-gray-700">
+                        {item.date}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </Slider>
       </div>
@@ -55,3 +102,4 @@ const News = () => {
 };
 
 export default News;
+
