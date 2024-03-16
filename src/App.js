@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 // import components
 import Hero from "./components/Hero";
-import About from "./components/About";
+
 import Features from "./components/Features";
 import Testimonials from "./components/Testimonials";
 import CtaSection from "./components/CtaSection";
@@ -18,7 +18,7 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Information from "./page/Information";
 import News from "./page/News";
-
+import About from "./page/About";
 const App = () => {
   // animate on scroll initialization
   Aos.init({
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/thong_tin" element={<Information />} />
           <Route path="/bi_quyet_cham_soc_da" element={<News />} />
+          <Route path="/gioi_thieu" element={<About />} />
         </Routes>
       </div>
     </Router>

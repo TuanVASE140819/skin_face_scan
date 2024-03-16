@@ -55,8 +55,8 @@ import Model6 from "../src/assets/img/model/model6.png";
 
 // InforBanner
 import InforBannerImg from "../src/assets/img/model/model_banner.png";
-
-// About
+import InforBannerImg2 from "../src/assets/img/About/banner.png";
+import InforBannerImg3 from "../src/assets/img/About/banner2.png";
 
 export const navigationData = [
   {
@@ -250,6 +250,25 @@ export const aboutData = {
   subtitle:
     "We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of delivery.",
 };
+
+export const InforBanner2 = {
+  image: InforBannerImg2,
+  title1: "Câu chuyện",
+  title2: "Duis autem vel eum iriure dolor in ",
+  title3: "hendrerit",
+  subtitle:
+    " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+export const InforBanner3 = {
+  image1: InforBannerImg3,
+  title11: "Tầm nhìn sứ mệnh",
+  title21: "Lorem ipsum dolor ",
+  title31: "sit amet",
+  title41: "consectetur adipiscing elit",
+  subtitle1:
+    " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
 
 export const InforBanner = {
   image: InforBannerImg,

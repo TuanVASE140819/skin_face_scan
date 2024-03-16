@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 // import about data
 import { aboutData, InforBanner } from "../data";
 
-const About = () => {
+const About1 = () => {
   // destructure about
   const { image, title1, title2, title3, subtitle } = InforBanner;
   return (
@@ -50,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About1;

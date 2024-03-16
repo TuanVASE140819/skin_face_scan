@@ -2,7 +2,7 @@
 // import các component từ thư mục components
 import React from "react";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import About from "../components/About1";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import CtaSection from "../components/CtaSection";

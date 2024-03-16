@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../components/About";
+import About from "../components/About1";
 import Footer from "../components/Footer";
 import Statistical from "../components/Statistical";
 import Banner2 from "../components/Banner2";
