@@ -19,6 +19,7 @@ import Nav from "./components/Nav";
 import Information from "./page/Information";
 import News from "./page/News";
 import About from "./page/About";
+import Scan from "./page/Scan";
 const App = () => {
   // animate on scroll initialization
   Aos.init({
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/thong_tin" element={<Information />} />
           <Route path="/bi_quyet_cham_soc_da" element={<News />} />
           <Route path="/gioi_thieu" element={<About />} />
+          <Route path="/skin_care_scan" element={<Scan />} />
         </Routes>
       </div>
     </Router>
