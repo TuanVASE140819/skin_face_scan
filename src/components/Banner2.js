@@ -11,7 +11,7 @@ const Hero = () => {
   const { title, title2, subtitle, btnText, image, image2 } = infoData;
   return (
     <>
-      <section className="lg:h-[830px] hidden md:block">
+      <section className="lg:h-[600px] pt-40 hidden md:block">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
@@ -34,6 +34,7 @@ const Hero = () => {
                 {title2}
               </h1>
               {/* subtitle */}
+
               <p
                 className="lead xl:max-w-[380px] mb-6 lg:mb-12"
                 data-aos="fade-down"
@@ -77,7 +78,12 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt=""
+                className=""
+                style={{ width: "80%", height: "auto" }}
+              />
             </div>
           </div>
         </div>

@@ -15,8 +15,10 @@ const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
+    
     setModalIsOpen(true);
   }
+  
 
   const closeModal = () => {
     setModalIsOpen(false);

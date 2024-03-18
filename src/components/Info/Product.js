@@ -74,8 +74,8 @@ const SamplePrevArrow = (props) => {
                     />
 
                     <div className="flex flex-col items-center justify-between pb-5 pr-2 pl-2">
-                      <div className="font-bold text-xl mb-2">{item.title}</div>
-                      <div>
+                      <div className="font-bold text-xs mb-2">{item.title}</div>
+                      <div className="text-xs">
                         Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </div>
@@ -108,8 +108,8 @@ const SamplePrevArrow = (props) => {
                     />
 
                     <div className="flex flex-col items-center justify-between pb-5 pr-2 pl-2">
-                      <div className="font-bold text-xl mb-2">{item.title}</div>
-                      <div>
+                      <div className="font-bold text-xs mb-2">{item.title}</div>
+                      <div className="text-xs">
                         Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </div>

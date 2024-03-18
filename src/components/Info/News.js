@@ -55,38 +55,38 @@ const News = () => {
         <Slider {...settings}>
           {contentNewsData.map((item, index) => (
             <div className="p-8" key={index}>
-              <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow ">
+              <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow ">
                 <img
-                  class="w-full border-b border-r"
+                  className="w-full border-b border-r rounded-lg"
                   src={
                     item.image ? item.image : "https://via.placeholder.com/300"
                   }
                   alt={item.title}
                 />
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                  <div class="mb-2 text-sm text-primary1">{item.tag}</div>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                  <div className="mb-2 text-sm text-primary1">{item.tag}</div>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                     {item.title.length > 40
                       ? item.title.substring(0, 40) + "..."
                       : item.title}
                   </h5>
-                  <p class="mb-3 font-normal text-gray-700">
+                  <p className="mb-3 font-normal text-gray-700">
                     {item.content.length > 100
                       ? item.content.substring(0, 100) + "..."
                       : item.content}
                   </p>
                   {/* avatar và date */}
-                  <div class="flex items first-letter:capitalize">
+                  <div className="flex items first-letter:capitalize">
                     <img
-                      class="w-10 h-10 rounded-full"
+                      className="w-10 h-10 rounded-full"
                       src={item.avatar}
                       alt="Avatar of Jonathan Reinink"
                     />
-                    <div class="flex flex-col ml-2">
-                      <p class="text-sm font-semibold text-gray-900">
+                    <div className="flex flex-col ml-2">
+                      <p className="text-sm font-semibold text-gray-900">
                         {item.customerName}
                       </p>
-                      <p class="text-xs font-normal text-gray-700">
+                      <p className="text-xs font-normal text-gray-700">
                         {item.date}
                       </p>
                     </div>

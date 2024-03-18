@@ -21,7 +21,7 @@ const Result = () => {
     <>
       <section className="lg:h-[45em] hidden md:block grid grid-row-3 p-[10rem] bg-gray-100">
         <div class="flex ...">
-          <div class="flex-1 text-center flex flex-col items-center justify-center ...">
+          <div class="flex-1 text-center flex flex-col items-center justify-center pr-3">
             <img
               src={Demo}
               alt="placeholder"
@@ -50,13 +50,13 @@ const Result = () => {
             <div class="flex flex-col ...">
               <div class="grid grid-cols-3 gap-4 justify-items-start">
                 <div class="grid grid-rows-2">
-                  <div class="font-bold text-6xl">
+                  <div class="font-bold text-xl">
                     24
                     <span className="text-gray-400 text-base"> year old</span>
                   </div>
-                  <div class="font-base text-6xl">Skin</div>
+                  <div class="font-base text-xl">Skin</div>
                 </div>
-                <div className="flex items-center justify-center text-6xl font-bold">
+                <div className="flex items-center justify-center text-xl font-bold">
                   7/10
                 </div>
                 <div className="flex items-center justify-center text-sm font-bold animated-text text-orange-500">
@@ -111,40 +111,40 @@ const Result = () => {
                 <div class="grid grid-cols-2 gap-4 mt-5">
                   <div class="flex items-center">
                     <div class="h-5 w-5 bg-pink-500 rounded-full mr-5"></div>
-                    <span className="font-bold text-xl">Mụn đầu đen</span>
+                    <span className="font-bold text-sm">Mụn đầu đen</span>
                   </div>
 
-                  <div className="text-3xl font-bold text-center">5/10</div>
+                  <div className="text-xl font-bold text-center">5/10</div>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-5">
                   <div class="flex items-center">
                     <div class="h-5 w-5 bg-red-500 rounded-full mr-5"></div>
-                    <span className="font-bold text-xl">Nếp nhăn</span>
+                    <span className="font-bold text-sm">Nếp nhăn</span>
                   </div>
 
-                  <div className="text-3xl font-bold text-center">5/10</div>
+                  <div className="text-xl font-bold text-center">5/10</div>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-5">
                   <div class="flex items-center">
                     <div class="h-5 w-5 bg-purple-500 rounded-full mr-5"></div>
-                    <span className="font-bold text-xl">Màu da</span>
+                    <span className="font-bold text-sm">Màu da</span>
                   </div>
 
-                  <div className="text-3xl font-bold text-center">5/10</div>
+                  <div className="text-xl font-bold text-center">5/10</div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4 mt-5">
                   <div class="flex items-center">
                     <div class="h-5 w-5 bg-green-500 rounded-full mr-5"></div>
-                    <span className="font-bold text-xl">Da dầu</span>
+                    <span className="font-bold text-sm">Da dầu</span>
                   </div>
 
-                  <div className="text-3xl font-bold text-center">5/10</div>
+                  <div className="text-xl font-bold text-center">5/10</div>
                 </div>
               </div>
 
               <div>
-                <h1 className="text-3xl font-bold mt-5">Thang đo mức độ mụn</h1>
+                <h1 className="text-xl font-bold mt-5">Thang đo mức độ mụn</h1>
 
                 <div
                   className="relative w-full h-5 rounded-full mt-5"
