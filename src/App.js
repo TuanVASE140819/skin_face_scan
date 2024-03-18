@@ -22,6 +22,7 @@ import About from "./page/About";
 import Scan from "./page/Scan";
 import Contact from "./page/Contact";
 import Commit from "./page/Commit";
+import Review from "./page/Review";
 const App = () => {
   // animate on scroll initialization
   Aos.init({
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/skin_care_scan" element={<Scan />} />
           <Route path="/lien_he" element={<Contact />} />
           <Route path="/cam_ket" element={<Commit />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
       </div>
     </Router>

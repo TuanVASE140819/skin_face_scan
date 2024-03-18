@@ -378,6 +378,82 @@ export const testimonialsData = [
   },
 ];
 
+
+export const reviewData = [
+  {
+    image: Model4,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model5,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model6,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model4,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model4,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model5,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model6,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+  {
+    image: Model4,
+    title: "Collagen Hàn Quốc có tốt không? ",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "20/10/2021",
+    avatar: "https://via.placeholder.com/150",
+    customerName: "Diễm Nguyễn",
+  },
+];
+
 export const ctaData = {
   title: "Contact Us From Here",
   subtitle: "Get limited 1 week free try our features!",
