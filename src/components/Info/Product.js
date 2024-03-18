@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,36 +10,46 @@ import "../../page/index.css";
 // import  nút
 import Next from "../../../src/assets/img/button/next.png";
 import Prev from "../../../src/assets/img/button/prev.png";
+
+import Modal from "react-modal";
 const Product = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
-const SampleNextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <img
-      src={Next}
-      alt="next"
-      className={className}
-      style={{ ...style, display: "block", width: "50px", height: "50px" }}
-      onClick={onClick}
-    />
-  );
-};
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src={Next}
+        alt="next"
+        className={className}
+        style={{ ...style, display: "block", width: "50px", height: "50px" }}
+        onClick={onClick}
+      />
+    );
+  };
 
-const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <img
-      src={Prev}
-      alt="prev"
-      className={className}
-      style={{ ...style, display: "block", width: "50px", height: "50px" }}
-      onClick={onClick}
-    />
-  );
-};
-  
-  
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <img
+        src={Prev}
+        alt="prev"
+        className={className}
+        style={{ ...style, display: "block", width: "50px", height: "50px" }}
+        onClick={onClick}
+      />
+    );
+  };
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+  };
+
+  // Function to close the modal
+  const handleCloseModal = () => {
+    setSelectedProduct(null);
+  };
+
   const settings = {
     // dots: true,
     infinite: true,
@@ -59,8 +69,11 @@ const SamplePrevArrow = (props) => {
         <div>
           <Slider {...settings}>
             {productInfoData.map((item, index) => (
-              // dùng flex chia 2 cột
-              <div className="p-8" key={index}>
+              <div
+                className="p-8"
+                key={index}
+                onClick={() => handleProductClick(item)}
+              >
                 <div className="rounded overflow-hidden shadow-lg zoom">
                   <div className="flex items-center justify-between pb-5 pr-2 pl-2">
                     <img
@@ -94,7 +107,11 @@ const SamplePrevArrow = (props) => {
           <Slider {...settings}>
             {productInfoData.map((item, index) => (
               // dùng flex chia 2 cột
-              <div className="p-8" key={index}>
+              <div
+                className="p-8"
+                key={index}
+                onClick={() => handleProductClick(item)}
+              >
                 <div className="rounded overflow-hidden shadow-lg zoom">
                   <div className="flex items-center justify-between pb-5 pr-2 pl-2">
                     <img
@@ -121,8 +138,68 @@ const SamplePrevArrow = (props) => {
           </Slider>
         </div>
       </section>
+      {selectedProduct && (
+        <Modal
+          isOpen={selectedProduct}
+          onRequestClose={handleCloseModal}
+          style={{
+            content: {
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              marginRight: "-50%",
+              transform: "translate(-50%, -50%)",
+              padding: "0",
+              border: "none",
+              background: "none",
+            },
+          }}
+        >
+          <div className="bg-blue-50 w-[50rem] h-[30rem] rounded-3xl overflow-hidden border border-orange-500">
+            <div className="grid grid-cols-4">
+              <div className="col-span-1">
+                <img
+                  className="w-full"
+                  src={
+                    selectedProduct.image
+                      ? selectedProduct.image
+                      : "https://via.placeholder.com/300"
+                  }
+                  alt="Sunset in the mountains"
+                />
+              </div>
+              <div className="col-span-3 p-8 h-20">
+                <img
+                  src="https://ckdvietnam.com/assets/images/logo.png"
+                  className="w-20 mb-4"
+                  alt="logo"
+                />
+                <h2 className="text-2xl font-bold mb-4">
+                  {selectedProduct.title}
+                </h2>
+                <p className="text-gray-500  text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                </p>
+                <button
+                  className="bg-orange-500
+                 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4"
+                >
+                  Tìm cửa hàng
+                </button>
+                {/* Add the store locator button here */}
+              </div>
+            </div>
+          </div>
+        </Modal>
+      )}
     </>
   );
-                };
+};
 
-                export default Product;
+export default Product;
