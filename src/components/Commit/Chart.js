@@ -24,15 +24,15 @@ const data = [
 ];
 const Chart = () => {
   return (
-    <section className="container mx-auto flex">
-      <div className="w-1/2">
+    <section className="container my-[50pt] xl:mt-[100px] mx-auto flex justify-center items-center p-10">
+      <div className="w-2/3 bg-gray-100 p-3 border-2 border-gray-200 rounded-lg">
         <LineChart
-          width={500}
-          height={300}
+          width={600}
+          height={500}
           data={data}
           margin={{
             top: 5,
-            right: 30,
+
             left: 20,
             bottom: 5,
           }}
@@ -45,12 +45,117 @@ const Chart = () => {
           <Line
             type="monotone"
             dataKey="users"
-            stroke="#8884d8"
+            stroke="#f39e14"
             activeDot={{ r: 8 }}
           />
         </LineChart>
+        <p>Biểu đồ thể hiện số người tham gia theo từng tháng trong năm</p>
       </div>
-      <div className="w-1/2">{/* Insert your text list here */}</div>
+      <div className="w-1/3 flex flex-col space-y-4 pl-4">
+        <div className="flex flex-col space-y-2">
+          <div className="text-2xl text-orange-500 font-bold">Mục tiêu</div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+          <div className="flex space-x-2 ">
+            <img
+              className="w-10 h-10 object-cover rounded-full"
+              src="https://via.placeholder.com/300"
+              alt="mục tiêu"
+            />
+            <div className="text-black">
+              <p>Tăng số lượng người dùng tham gia sử dụng sản phẩm</p>
+            </div>
+            <p>Đạt 1000 người dùng</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

@@ -28,7 +28,7 @@ const Commit = () => {
       <Statistical />
       <AboutCommit />
       <RuleUser />
-      {/* <Chart /> */}
+      <Chart />
       <AboutCommit2 />
       <Footer />
     </div>
