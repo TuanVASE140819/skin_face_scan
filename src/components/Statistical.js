@@ -8,7 +8,7 @@ const Statistical = () => {
   return (
     <>
       <section
-        className="flex justify-center p-5 bg-gray-200 border hidden md:flex"
+        className="flex justify-center p-1 mt-16 bg-gray-200 border hidden md:flex"
         style={{
           marginLeft: "15%",
           marginRight: "15%",

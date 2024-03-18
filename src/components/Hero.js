@@ -23,7 +23,7 @@ const Hero = () => {
   }
   return (
     <>
-      <section className="lg:h-[830px] hidden md:block">
+      <section className="lg:h-[600px] pt-40 hidden md:block">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
@@ -90,7 +90,12 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt=""
+                className=""
+                style={{ width: "80%", height: "auto" }}
+              />
             </div>
           </div>
         </div>
@@ -156,7 +161,8 @@ const Hero = () => {
                 className="btn btn-primary mb-8 xl:mb-0"
                 style={{ display: "flex", alignItems: "center" }}
                 data-aos="fade-down"
-                data-aos-delay="600" onClick={openModal}
+                data-aos-delay="600"
+                onClick={openModal}
               >
                 <img src={image2} alt="" className="w-5 h-5  ripple" />
 
@@ -166,7 +172,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <Modal  
+      <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={{
@@ -174,101 +180,111 @@ const Hero = () => {
           //   backgroundColor: 'rgba(0,0,0,0.5)'
           // },
           content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            padding: '0',
-            border: 'none',
-            background: 'none',
-          }
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            padding: "0",
+            border: "none",
+            background: "none",
+          },
         }}
       >
-      {/* 30rem có viền màu cam */}
-      <div className="bg-white w-[80rem] rounded-3xl overflow-hidden border border-orange-500">
-      {/*  dùng grid chia 2 côt 1 cột chiếm 2/3 1 cột chiếm 1/3 */}
-      <div className="grid grid-cols-2">
-        <div className="col-span-1 p-10">
-          <h3 className="text-3xl font-bold text-start py-5">Hướng Dẫn Sử Dụng</h3>
-          <h5 className="text-2xl font-bold text-start py-5">Chụp 4 góc mặt:</h5>
-          {/*  tạo 4 hình ảnh nằm ngang */}
-          <div className="grid grid-cols-4">
-          <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
-           <img src="https://via.placeholder.com/60" className="rounded-full" alt="" />
-  <p>
-    Nhìn sang trái
-  </p>
-</div>
-<div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
-            <img src="https://via.placeholder.com/60" className="rounded-full" alt="" />
-            <p>
-                Nhìn sang phải
-              </p>
-            </div>
-            <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
-            <img src="https://via.placeholder.com/60" className="rounded-full" alt="" />
-            <p>
-                Nhìn thẳng
-              </p>
-            </div>
-            <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
-            <img src="https://via.placeholder.com/60" className="rounded-full" alt="" />
-            <p>
-                Đưa xuống cố
-              </p>
-            </div>
-          </div>
-          <h5 className="text-2xl font-bold text-start py-5">Để có kết quả tốt nhất:</h5>
-           {/*  dùng gird chia 2x2 */}
+        {/* 30rem có viền màu cam */}
+        <div className="bg-white w-[80rem] rounded-3xl overflow-hidden border border-orange-500">
+          {/*  dùng grid chia 2 côt 1 cột chiếm 2/3 1 cột chiếm 1/3 */}
           <div className="grid grid-cols-2">
-            <div className="col-span-1">
-              {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
-             <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
-                <img src="https://via.placeholder.com/30" alt="" />
-                <span className="pl-2">Hạn chế trang điểm & đeo kính</span>
-              </button>
-            </div>
-            <div className="col-span-1">
-              {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
-             <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
-                <img src="https://via.placeholder.com/30" alt="" />
-                <span className="pl-2">Cố định máy ảnh cận mắt</span>
-              </button>
-            </div>
-            <div className="col-span-1">
-              {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
-             <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
-                <img src="https://via.placeholder.com/30" alt="" />
-                <span className="pl-2">Không để tóc che mắt</span>
-              </button>
-            </div>
-            <div className="col-span-1">
-              {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
-             <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
-                <img src="https://via.placeholder.com/30" alt="" />
-                <span className="pl-2">Đạm bảo ánh sáng tốt</span>
-              </button>
-            </div>
-          </div>
+            <div className="col-span-1 p-10">
+              <h3 className="text-3xl font-bold text-start py-5">
+                Hướng Dẫn Sử Dụng
+              </h3>
+              <h5 className="text-2xl font-bold text-start py-5">
+                Chụp 4 góc mặt:
+              </h5>
+              {/*  tạo 4 hình ảnh nằm ngang */}
+              <div className="grid grid-cols-4">
+                <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
+                  <img
+                    src="https://via.placeholder.com/60"
+                    className="rounded-full"
+                    alt=""
+                  />
+                  <p>Nhìn sang trái</p>
+                </div>
+                <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
+                  <img
+                    src="https://via.placeholder.com/60"
+                    className="rounded-full"
+                    alt=""
+                  />
+                  <p>Nhìn sang phải</p>
+                </div>
+                <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
+                  <img
+                    src="https://via.placeholder.com/60"
+                    className="rounded-full"
+                    alt=""
+                  />
+                  <p>Nhìn thẳng</p>
+                </div>
+                <div className="col-span-1 min-w-[60px] flex flex-col items-center justify-center">
+                  <img
+                    src="https://via.placeholder.com/60"
+                    className="rounded-full"
+                    alt=""
+                  />
+                  <p>Đưa xuống cố</p>
+                </div>
+              </div>
+              <h5 className="text-2xl font-bold text-start py-5">
+                Để có kết quả tốt nhất:
+              </h5>
+              {/*  dùng gird chia 2x2 */}
+              <div className="grid grid-cols-2">
+                <div className="col-span-1">
+                  {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
+                  <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
+                    <img src="https://via.placeholder.com/30" alt="" />
+                    <span className="pl-2">Hạn chế trang điểm & đeo kính</span>
+                  </button>
+                </div>
+                <div className="col-span-1">
+                  {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
+                  <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
+                    <img src="https://via.placeholder.com/30" alt="" />
+                    <span className="pl-2">Cố định máy ảnh cận mắt</span>
+                  </button>
+                </div>
+                <div className="col-span-1">
+                  {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
+                  <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
+                    <img src="https://via.placeholder.com/30" alt="" />
+                    <span className="pl-2">Không để tóc che mắt</span>
+                  </button>
+                </div>
+                <div className="col-span-1">
+                  {/*  tôi muốn tạo một nút bên phải là hình ảnh  bên trái là text */}
+                  <button className=" flex items-center px-4 py-2 rounded-full shadow-lg min-w-[17rem]">
+                    <img src="https://via.placeholder.com/30" alt="" />
+                    <span className="pl-2">Đạm bảo ánh sáng tốt</span>
+                  </button>
+                </div>
+              </div>
 
-          <button className="btn-primary flex items-center px-4 py-2 rounded-full shadow-lg mt-5">
-               
+              <button className="btn-primary flex items-center px-4 py-2 rounded-full shadow-lg mt-5">
                 <span className="pl-7 pr-7 text-white font-bold">
                   Tôi đã hiểu
                 </span>
               </button>
-          
+            </div>
+            <div className="col-span-1 p-10">
+              <img src={image} alt="" />
+            </div>
+          </div>
         </div>
-        <div className="col-span-1 p-10">
-        <img src={image} alt="" />
-        </div>
-      </div>
-
-      </div>
       </Modal>
-
     </>
   );
 };
