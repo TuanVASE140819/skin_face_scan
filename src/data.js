@@ -57,7 +57,8 @@ import Model6 from "../src/assets/img/model/model6.png";
 import InforBannerImg from "../src/assets/img/model/model_banner.png";
 import InforBannerImg2 from "../src/assets/img/About/banner.png";
 import InforBannerImg3 from "../src/assets/img/About/banner2.png";
-
+// Commit 
+import CommitBannerImg from "../src/assets/img/Commit/About2.png";
 export const navigationData = [
   {
     name: "Thông tin",
@@ -73,7 +74,7 @@ export const navigationData = [
   },
   {
     name: "Cam kết",
-    href: "/cam ket",
+    href: "/cam_ket",
   },
   {
     name: "Review",
@@ -222,6 +223,28 @@ export const ruleData = [
     title: "Trải Nghiệm",
   },
 ];
+export const ruleDataUser = [
+  {
+    image: Rule1,
+    title: "100% người dùng đã đồng ý",
+  },
+  {
+    image: Rule2,
+    title: "Giải pháp thiết yếu",
+  },
+  {
+    image: Rule3,
+    title: "Công nghệ AI",
+  },
+  {
+    image: Rule4,
+    title: "Trải Nghiệm",
+  },
+  {
+    image: Rule1,
+    title: "Chứng nhận viện nghiên cứu",
+  },
+];
 
 export const KeywordData = [
   {
@@ -269,7 +292,6 @@ export const InforBanner3 = {
     " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 };
 
-
 export const InforBanner = {
   image: InforBannerImg,
   title1: "Hơn",
@@ -280,6 +302,14 @@ export const InforBanner = {
     "Dữ liệu về tình trạng làn da, 288 triệu hình ảnh khác nhau về sức khỏe làn da, do người dùng cung cấp và nguồn từ google. hơn 10 tỷ mỗi năm",
 };
 
+export const CommitBanner2 = {
+  image: CommitBannerImg,
+  title1: "Câu chuyện",
+  title2: "Duis autem vel eum iriure dolor in ",
+  title3: "hendrerit",
+  subtitle:
+    " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
 export const featuresData = {
   title: "Some Services We Offer",
   subtitle:
