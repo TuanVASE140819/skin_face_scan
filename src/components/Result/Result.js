@@ -22,21 +22,21 @@ const Result = () => {
       <section className="lg:h-[45em] hidden md:block grid grid-row-3 p-[10rem] bg-gray-100">
         <div class="flex ...">
           <div class="flex-1 text-center flex flex-col items-center justify-center ...">
-            {/* <img
+            <img
               src={Demo}
               alt="placeholder"
               className="rounded-lg p-1 shadow-lg border-2 border-gray-200"
+            />
+            {/* <Webcam
+              className="rounded-lg p-1 shadow-lg border-2 border-gray-200 h-96 w-96"
+              audio={false}
+              height={400}
+              screenshotFormat="image/jpeg"
+              width={400}
+              videoConstraints={{
+                facingMode: "user",
+              }}
             /> */}
-            <Webcam
-            className="rounded-lg p-1 shadow-lg border-2 border-gray-200"
-  audio={false}
-  height={400}
-  screenshotFormat="image/jpeg"
-  width={400}
-  videoConstraints={{
-    facingMode: "user"
-  }}
-/>
             <div className="mt-5 space-x-5 flex justify-center">
               <button className="px-10 py-2 border rounded-full shadow min-w-[10rem]">
                 Scrennshot
@@ -57,40 +57,54 @@ const Result = () => {
                   <div class="font-base text-6xl">Skin</div>
                 </div>
                 <div className="flex items-center justify-center text-6xl font-bold">
-                  7/10 
+                  7/10
                 </div>
                 <div className="flex items-center justify-center text-sm font-bold animated-text text-orange-500">
-        <button onClick={openModal}>Nguyên nhân & Giải pháp</button>
-        <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={
-          {
-            // overlay: {
-            //   backgroundColor: 'rgba(0, 0, 0, 0.5)'
-            // },
-            content: {
-              top: '50%',
-              left: '50%',
-              right: 'auto',
-              bottom: 'auto',
-              marginRight: '-50%',
-              transform: 'translate(-50%, -50%)',
-              padding: '2rem',
-              borderRadius: '10px',
-              width: '50%',
-              height: '50%'
-            }
-          }
-        }>
-          <h2>Nguyên nhân</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-          </p>
-          <h2>Giải pháp</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-          </p>
-          <button onClick={closeModal}>Close</button>
-        </Modal>
-      </div>
+                  <button onClick={openModal}>Nguyên nhân & Giải pháp</button>
+                  <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    style={{
+                      // overlay: {
+                      //   backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                      // },
+                      content: {
+                        top: "50%",
+                        left: "50%",
+                        right: "auto",
+                        bottom: "auto",
+                        marginRight: "-50%",
+                        transform: "translate(-50%, -50%)",
+                        padding: "2rem",
+                        borderRadius: "10px",
+                        width: "50%",
+                        height: "50%",
+                      },
+                    }}
+                  >
+                    <h2>Nguyên nhân</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+                      aliquam nisl, nec aliquam justo nunc ac nunc. Nunc
+                      pharetra, elit nec ultrices tincidunt, tortor nisl aliquam
+                      nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit
+                      nec ultrices tincidunt, tortor nisl aliquam nisl, nec
+                      aliquam justo nunc ac nunc.
+                    </p>
+                    <h2>Giải pháp</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+                      aliquam nisl, nec aliquam justo nunc ac nunc. Nunc
+                      pharetra, elit nec ultrices tincidunt, tortor nisl aliquam
+                      nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit
+                      nec ultrices tincidunt, tortor nisl aliquam nisl, nec
+                      aliquam justo nunc ac nunc.
+                    </p>
+                    <button onClick={closeModal}>Close</button>
+                  </Modal>
+                </div>
               </div>
 
               <div className=" bg-white p-5 rounded-lg shadow-lg ">
@@ -112,7 +126,7 @@ const Result = () => {
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-5">
                   <div class="flex items-center">
-                  <div class="h-5 w-5 bg-purple-500 rounded-full mr-5"></div>
+                    <div class="h-5 w-5 bg-purple-500 rounded-full mr-5"></div>
                     <span className="font-bold text-xl">Màu da</span>
                   </div>
 
@@ -126,46 +140,78 @@ const Result = () => {
                   </div>
 
                   <div className="text-3xl font-bold text-center">5/10</div>
-                  
                 </div>
               </div>
 
               <div>
-           <h1 className="text-3xl font-bold mt-5">Thang đo mức độ mụn</h1>
-          
-           <div className="relative w-full h-5 rounded-full mt-5" style={{background: 'linear-gradient(to right, yellow, orange)'}}>
-  <div className="absolute top-0 left-1/4 text-center transform -translate-y-full">1</div>
-  <div className="absolute top-0 left-1/2 text-center transform -translate-y-full">2</div>
-  <div className="absolute top-0 left-3/4 text-center transform -translate-y-full">3</div>
-  <div className="absolute h-full w-px bg-white left-1/4"></div>
-  <div className="absolute h-full w-px bg-white left-1/2"></div>
-  <div className="absolute h-full w-px bg-white left-3/4"></div>
-  <div className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white rounded-full cursor-pointer" style={{left: '30%'}}></div>
-</div>
+                <h1 className="text-3xl font-bold mt-5">Thang đo mức độ mụn</h1>
 
-<div className="flex justify-between mt-5 font-bold">
-  <span>Your Grade</span>
-</div>
-        </div>
+                <div
+                  className="relative w-full h-5 rounded-full mt-5"
+                  style={{
+                    background: "linear-gradient(to right, yellow, orange)",
+                  }}
+                >
+                  <div className="absolute top-0 left-1/4 text-center transform -translate-y-full">
+                    1
+                  </div>
+                  <div className="absolute top-0 left-1/2 text-center transform -translate-y-full">
+                    2
+                  </div>
+                  <div className="absolute top-0 left-3/4 text-center transform -translate-y-full">
+                    3
+                  </div>
+                  <div className="absolute h-full w-px bg-white left-1/4"></div>
+                  <div className="absolute h-full w-px bg-white left-1/2"></div>
+                  <div className="absolute h-full w-px bg-white left-3/4"></div>
+                  <div
+                    className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white rounded-full cursor-pointer"
+                    style={{ left: "30%" }}
+                  ></div>
+                </div>
+
+                <div className="flex justify-between mt-5 font-bold">
+                  <span>Your Grade</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="flex-1 h-[30rem] overflow-x-auto p-5 m-5  bg-white rounded-lg shadow-lg">
-    <h1>Phân tích</h1>
-    <p className="mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-    </p>
-    <p className="mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-    </p>
-    <h1>Nguyên nhân</h1>
-    <p className="mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-    </p>
-    <p className="mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac nunc.
-    </p>
-</div>
-
+            <h1>Phân tích</h1>
+            <p className="mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl,
+              nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices
+              tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac
+              nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+              aliquam nisl, nec aliquam justo nunc ac nunc.
+            </p>
+            <p className="mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl,
+              nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices
+              tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac
+              nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+              aliquam nisl, nec aliquam justo nunc ac nunc.
+            </p>
+            <h1>Nguyên nhân</h1>
+            <p className="mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl,
+              nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices
+              tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac
+              nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+              aliquam nisl, nec aliquam justo nunc ac nunc.
+            </p>
+            <p className="mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              pharetra, elit nec ultrices tincidunt, tortor nisl aliquam nisl,
+              nec aliquam justo nunc ac nunc. Nunc pharetra, elit nec ultrices
+              tincidunt, tortor nisl aliquam nisl, nec aliquam justo nunc ac
+              nunc. Nunc pharetra, elit nec ultrices tincidunt, tortor nisl
+              aliquam nisl, nec aliquam justo nunc ac nunc.
+            </p>
+          </div>
         </div>
       </section>
     </>

@@ -34,6 +34,9 @@
     margin-right: 10%;
    
 }
+.custom-background {
+  background-color: #ebaa9f;
+}
 
 @keyframes blink {
     0% {opacity: 1;}
