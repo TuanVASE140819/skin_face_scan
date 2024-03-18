@@ -41,17 +41,38 @@ const Review1 = () => {
       />
     );
   };
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 5000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
+const settings = {
+  // existing settings...
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024, // this means screen sizes less than 1024px
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768, // this means screen sizes less than 768px
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480, // this means screen sizes less than 480px
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
   return (
     <>
       <section className="p-8 mx-auto container-product">
