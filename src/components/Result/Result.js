@@ -1,33 +1,39 @@
-import React, { useState } from "react";
-import Modal from 'react-modal';
-// src/assets/img/About/demo.png
+import React, { useState, useEffect } from "react";
+import Modal from "react-modal";
 import Demo from "../../assets/img/About/demo.png";
-
 import "../../../src/page/index.css";
-
 import Webcam from "react-webcam";
 
 const Result = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const openModal = () => {
     setModalIsOpen(true);
-  }
+  };
 
   const closeModal = () => {
     setModalIsOpen(false);
-  }
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 7000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <section className="lg:h-[45em] hidden md:block grid grid-row-3 p-[10rem] bg-gray-100">
         <div class="flex ...">
           <div class="flex-1 text-center flex flex-col items-center justify-center pr-3">
-            <img
+            {/* <img
               src={Demo}
               alt="placeholder"
               className="rounded-lg p-1 shadow-lg border-2 border-gray-200"
-            />
-            {/* <Webcam
+            /> */}
+            <Webcam
               className="rounded-lg p-1 shadow-lg border-2 border-gray-200 h-96 w-96"
               audio={false}
               height={400}
@@ -36,7 +42,7 @@ const Result = () => {
               videoConstraints={{
                 facingMode: "user",
               }}
-            /> */}
+            />
             <div className="mt-5 space-x-5 flex justify-center">
               <button className="px-10 py-2 border rounded-full shadow min-w-[10rem]">
                 Scrennshot
