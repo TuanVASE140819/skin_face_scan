@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="text-center xl:text-left xl:absolute">
               {/* title */}
               <h1
-                className="h2 xl:max-w-[700px]"
+                className="text-4xl xl:max-w-[700px] font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -41,7 +41,7 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="h2 xl:max-w-[700px] text-orange-500"
+                className="text-4xl xl:max-w-[700px] text-orange-500 font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
