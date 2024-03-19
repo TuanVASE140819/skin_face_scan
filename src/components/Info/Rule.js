@@ -11,7 +11,7 @@ const Rule = () => {
         </h1>
       </div>
       {/*  danh sách sẽ nằm trên 1 hàng */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {ruleData.map((item, index) => (
           <div
             className="p-10 sm:p-6 md:p-10 min-w-[5rem] sm:min-w-[7rem] md:min-w-[10rem] zoom border border-orange-500 border-solid rounded-lg"
