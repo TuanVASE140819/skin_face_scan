@@ -20,7 +20,7 @@ const Content = () => {
   };
   return (
     <section>
-      <div className="p-8 container mx-auto">
+      <div className="p-8 container mx-auto hidden md:block">
         {/* title */}
         <h1 className="h3-2 text-center">Chăm Sóc Sức Khỏe</h1>
 
@@ -30,7 +30,7 @@ const Content = () => {
 
         <Slider {...settings}>
           {contentInfoData.map((item, index) => (
-            <div className="p-8" key={index}>
+            <div className="p-8  " key={index}>
               <div className="rounded overflow-hidden shadow-lg zoom">
                 <img
                   className="w-96 h-96 object-cover"
@@ -58,6 +58,36 @@ const Content = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="pt-8 pb-8 mx-auto block md:hidden">
+        {/* title */}
+        <h1 className="h3-2 text-center">Chăm Sóc Sức Khỏe</h1>
+
+        <h1 className="h3-2 text-orange-500 text-center">
+          Làn Da Tốt Nhất Cho Mọi Loại Da
+        </h1>
+
+        <Slider {...settings}>
+          {contentInfoData.map((item, index) => (
+            <div className="p-1 relative" key={index}>
+              <div className="rounded overflow-hidden shadow-lg zoom">
+                <img
+                  className="w-50 h-50 object-cover rounded-lg"
+                  src={
+                    item.image ? item.image : "https://via.placeholder.com/300"
+                  }
+                  alt={item.title}
+                />
+                <div className="absolute bottom-0 left-0 w-full flex items-end justify-start text-white p-4">
+                  <div className="mr-7 text-[8px]">{item.title}</div>
+                  <button className="btn-primary  text-[8px] px-1 rounded-full">
+                    Khám phá
                   </button>
                 </div>
               </div>

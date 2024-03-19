@@ -162,7 +162,7 @@ return (
         <Slider {...settings}>
           {productInfoData.map((item, index) => (
             <div
-              className="p-1"
+              className="pt-5 p-1"
               key={index}
               onClick={() => handleProductClick(item)}
             >
@@ -200,7 +200,7 @@ return (
           {productInfoData.map((item, index) => (
             // dùng flex chia 2 cột
             <div
-              className="p-1"
+              className="pt-7 p-1"
               key={index}
               onClick={() => handleProductClick(item)}
             >
