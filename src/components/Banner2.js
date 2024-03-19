@@ -58,15 +58,15 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
-                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
                   <div>Bước 1</div>
                   <div className=" text-lg font-bold">Quét da</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
                   <div>Bước 2:</div>
                   <div className=" text-lg font-bold">Khảo sát chuyên sâu</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
                   <div>Bước 3:</div>
                   <div className=" text-lg font-bold">Nhận kết quả</div>
                 </div>
