@@ -11,24 +11,24 @@ const Rule = () => {
         </h1>
       </div>
       {/*  danh sách sẽ nằm trên 1 hàng */}
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {ruleData.map((item, index) => (
           <div
-            className="p-10 min-w-[10rem] zoom border border-orange-500 border-solid mr-4 rounded-lg"
+            className="p-10 sm:p-6 md:p-10 min-w-[5rem] sm:min-w-[7rem] md:min-w-[10rem] zoom border border-orange-500 border-solid rounded-lg"
             key={index}
           >
             <div className="justify-center items-center">
               <div className="flex justify-center items-center">
                 <img
-                  className="w-30 h-30 object-cover"
+                  className="w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 object-cover"
                   src={
                     item.image ? item.image : "https://via.placeholder.com/300"
                   }
                   alt={item.title}
                 />
               </div>
-              <div className="flex min-w-[10rem] max-w-[10rem] justify-center items-center">
-                <div className="font-bold text-sm text-black text-center">
+              <div className="flex min-w-[5rem] sm:min-w-[7rem] md:min-w-[10rem] justify-center items-center">
+                <div className="font-bold text-xs sm:text-sm md:text-sm lg:text-base text-black text-center">
                   {item.title}
                 </div>
               </div>

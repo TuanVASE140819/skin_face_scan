@@ -216,7 +216,7 @@ export const ruleData = [
   },
   {
     image: Rule3,
-    title: "Phát Triển Công Nghệ Mới Nhất",
+    title: "Công Nghệ Mới Nhất",
   },
   {
     image: Rule4,

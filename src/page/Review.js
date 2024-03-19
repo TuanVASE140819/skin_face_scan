@@ -32,6 +32,7 @@ const Review = () => {
       <Statistical />
       <Review1 />
       <Review2 />
+      <Footer />
     </div>
   );
 };
