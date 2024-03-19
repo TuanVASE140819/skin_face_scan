@@ -20,7 +20,7 @@ const Content = () => {
   };
   return (
     <section>
-      <div className="p-8 container mx-auto hidden md:block">
+      <div className="p-8 mt-5 container mx-auto hidden md:block">
         {/* title */}
         <h1 className="h3-2 text-center">Chăm Sóc Sức Khỏe</h1>
 

@@ -11,7 +11,7 @@ const Hero = () => {
   const { title, title2, subtitle, btnText, image, image2 } = infoData;
   return (
     <>
-      <section className="lg:h-[600px] pt-40 hidden md:block">
+      <section className="lg:h-[600px] mt-[6rem] hidden bg-gray-100 md:block">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
@@ -58,15 +58,15 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
                   <div>Bước 1</div>
                   <div className=" text-lg font-bold">Quét da</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
                   <div>Bước 2:</div>
                   <div className=" text-lg font-bold">Khảo sát chuyên sâu</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-100 p-5 px-10 rounded-lg">
                   <div>Bước 3:</div>
                   <div className=" text-lg font-bold">Nhận kết quả</div>
                 </div>
@@ -98,11 +98,11 @@ const Hero = () => {
             <div className="text-[0.8rem]">Bước 1</div>
             <div className="text-[0.8rem] font-bold">Quét da</div>
           </div>
-          <div className="flex flex-col mr-5 bg-gray-200 px-3 rounded-lg glass">
+          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass">
             <div className="text-[0.8rem]">Bước 2:</div>
             <div className="text-[0.8rem] font-bold">Khảo sát chuyên sâu</div>
           </div>
-          <div className="flex flex-col mr-5 bg-gray-200 px-3 rounded-lg glass">
+          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass">
             <div className="text-[0.8rem]">Bước 3:</div>
             <div className="text-[0.8rem] font-bold">Nhận kết quả</div>
           </div>
