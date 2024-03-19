@@ -68,19 +68,19 @@ const Hero = () => {
 
               {/* tạo ra 3 nút nằm ngang */}
               <div
-                className="flex justify-center pt-5"
+                className="flex justify-center pt-5 pr-5"
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 1</div>
                   <div className=" text-lg font-bold">Quét da</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 2:</div>
                   <div className=" text-lg font-bold">Khảo sát chuyên sâu</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 3:</div>
                   <div className=" text-lg font-bold">Nhận kết quả</div>
                 </div>
@@ -88,15 +88,15 @@ const Hero = () => {
             </div>
             {/* image */}
             <div
-              className=" pt-5 xl:absolute xl:-right-12"
+              className="  xl:absolute xl:-right-12"
               data-aos="fade-up"
               data-aos-delay="700"
             >
               <img
                 src={image}
                 alt=""
-                className=""
-                style={{ width: "80%", height: "auto" }}
+                className=" ml-14"
+                style={{ width: "70%", height: "auto" }}
               />
             </div>
           </div>
