@@ -4,72 +4,60 @@ import "../../page/index.css";
 
 const Contact1 = () => {
   return (
-    <section className="my-[30px] xl:mt-[100px] flex items-center justify-center">
-      <div className="custom-background bg-white rounded-lg shadow-lg min-h-[500px] min-w-[80rem] border rounded-3xl">
-        <div className="grid grid-cols-3 ">
-          {/* phần 1 */}
-          <div
-            className="p-8 xl:pr-4 max-w-[500px]"
-            style={{ "@media (max-width: 1024px)": { display: "none" } }}
-          >
-            <h2 className="text-2xl font-bold mb-4">Scan checkHub</h2>
-            <p className="text-gray-500 pb-60 text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
-            </p>
-            {/*  tôi muốn logo điện thoại kèn số hotline */}
-            <div className="flex items-center gap-4 mt-8">
-              {/* <img
-                src="https://i.ibb.co/7zV5ZJ0/phone.png"
-                alt="phone"
-                style={{ width: "50px" }}
-              /> */}
-              <div>
-                <h2 className="text-2xl font-bold">Hotline</h2>
-                <p className="text-gray-500">1900 1424</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 mt-8">
-              {/* <img
-                src="https://i.ibb.co/7zV5ZJ0/phone.png"
-                alt="phone"
-                style={{ width: "50px" }}
-              /> */}
-              <div>
-                <h2 className="text-2xl font-bold">Email</h2>
-                <p className="text-gray-500">scancheckhub@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          {/* phần 2 */}
-          <div className="p-8 bg-white border rounded-3xl shadow-lg xl:col-span-2">
-            <form action="" className="grid grid-cols-1 gap-4">
-              <input
-                type="text"
-                placeholder="Họ và tên"
-                className="w-full p-4 border border-gray-300 rounded-md"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full p-4 border border-gray-300 rounded-md"
-              />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Nội dung"
-                className="w-full p-4 border border-gray-300 rounded-md"
-              ></textarea>
-              <button className="bg-orange-500 text-white py-1 rounded-full w-40 ml-auto text-xl">
-                Gửi
-              </button>
-            </form>
-          </div>
+    <section className="text-gray-600 body-font relative container mx-auto">
+    <div className="absolute inset-0 bg-gray-300">
+      <iframe
+        width="100%"
+        height="100%"
+        frameBorder={0}
+        marginHeight={0}
+        marginWidth={0}
+        title="map"
+        scrolling="no"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62669.209445251945!2d106.66625306953125!3d10.726940400000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f474b8c17ad%3A0x4dab2b7d48564f5b!2sC%C3%B4ng%20ty%20TNHH%20BLUE%20PINK!5e0!3m2!1svi!2s!4v1710955880540!5m2!1svi!2s"
+        style={{}}
+      />
+    </div>
+    <div className="container px-5 py-24 mx-auto flex">
+      <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+          Feedback
+        </h2>
+        {/* <p className="leading-relaxed mb-5 text-gray-600">
+          Post-ironic portland shabby chic echo park, banjo fashion axe
+        </p> */}
+        <div className="relative mb-4">
+          <label htmlFor="email" className="leading-7 text-sm text-gray-600">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
         </div>
+        <div className="relative mb-4">
+          <label htmlFor="message" className="leading-7 text-sm text-gray-600">
+            Nội dung
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            defaultValue={""}
+          />
+        </div>
+        <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          Gửi
+        </button>
+        {/* <p className="text-xs text-gray-500 mt-3">
+          Chicharrones blog helvetica normcore iceland tousled brook viral
+          artisan.
+        </p> */}
       </div>
-    </section>
+    </div>
+  </section>  
   );
 };
 

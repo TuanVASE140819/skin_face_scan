@@ -158,16 +158,18 @@ const Hero = () => {
               >
                 {subtitle}
               </p>
-              <button
-                className="btn btn-primary mb-8 xl:mb-0"
-                style={{ display: "flex", alignItems: "center" }}
-                data-aos="fade-down"
-                data-aos-delay="600"
-              >
-                <img src={image2} alt="" className="w-5 h-5  ripple" />
-
-                <div className="pl-2">{btnText}</div>
-              </button>
+              <div className="flex justify-center">
+                <button
+                  className="btn btn-primary mb-8 xl:mb-0"
+                  style={{ display: "flex", alignItems: "center" }}
+                  data-aos="fade-down"
+                  data-aos-delay="600"
+                  onClick={openModal}
+                >
+                  <img src={image2} alt="" className="w-5 h-5  ripple" />
+                  <div className="pl-2">{btnText}</div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
