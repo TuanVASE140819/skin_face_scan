@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
-import Demo from "../../assets/img/About/demo.png";
-import "../../../src/page/index.css";
+
+import "../../../../src/page/index.css";
 import Webcam from "react-webcam";
 
 const Result = () => {
