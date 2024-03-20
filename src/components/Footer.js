@@ -115,7 +115,10 @@ const Footer = () => {
         </div>
         <Copyright />
       </footer>
-      <footer className=" mt-16 border-t border-gray-200 block md:hidden">
+      <footer
+        className=" mt-16 border-t border-orange-300
+       bg-slate-100 block md:hidden"
+      >
         <div className="mt-5 m-5">
           <div>
             <a href="/">
