@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="text-center xl:text-left xl:absolute">
               {/* title */}
               <h1
-                className="h2 xl:max-w-[700px]"
+                className="text-4xl xl:max-w-[700px] font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -27,23 +27,22 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="h2 xl:max-w-[700px] text-orange-500"
+                className="text-4xl xl:max-w-[700px] text-orange-500 font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
                 {title2}
               </h1>
               {/* subtitle */}
-
               <p
-                className="lead xl:max-w-[380px] mb-6 lg:mb-12"
+                className="text-sm lead xl:max-w-[500px] mb-6 "
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
                 {subtitle}
               </p>
               <button
-                className="btn btn-primary mb-8 xl:mb-0"
+                className="btn btn-primary text-sm mb-8 xl:mb-0"
                 style={{ display: "flex", alignItems: "center" }}
                 data-aos="fade-down"
                 data-aos-delay="600"
@@ -54,21 +53,21 @@ const Hero = () => {
 
               {/* tạo ra 3 nút nằm ngang */}
               <div
-                className="flex justify-center pt-5"
+                className="flex justify-center pt-5 pr-5"
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 1</div>
-                  <div className=" text-lg font-bold">Quét da</div>
+                  <div className=" text-sm font-bold">Quét da</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 2:</div>
-                  <div className=" text-lg font-bold">Khảo sát chuyên sâu</div>
+                  <div className=" text-sm  font-bold">Khảo sát chuyên sâu</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-200 p-5 px-10 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-200 p-2 px-8 rounded-lg">
                   <div>Bước 3:</div>
-                  <div className=" text-lg font-bold">Nhận kết quả</div>
+                  <div className=" text-sm font-bold">Nhận kết quả</div>
                 </div>
               </div>
             </div>
