@@ -1,3 +1,31 @@
+
+.container-new {
+    width: 100%;
+    padding-right: 0.1rem/* 16px */;
+    padding-left: 0.1rem/* 16px */;
+}
+@media (min-width: 640px) {
+    .container-new {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container-new{
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container-new {
+        max-width: 1024px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (min-width: 1170px) {
+    .container-new {
+        max-width: 1700px;
+    }
+}
 .glass {
     background-color: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);

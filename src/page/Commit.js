@@ -20,12 +20,13 @@ import AboutCommit from "../components/Commit/AboutCommit";
 import AboutCommit2 from "../components/Commit/AboutCommit2";
 import Chart from "../components/Commit/Chart";
 
+import StatisticalHome from "../components/StatisticalHome";
 const Commit = () => {
   return (
     <div className="overflow-hidden">
       <Banner2 />
 
-      <Statistical />
+      <StatisticalHome />
       <AboutCommit />
       <RuleUser />
       <Chart />

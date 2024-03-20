@@ -13,8 +13,12 @@ const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
   return (
     <header
-      className="mb-12 lg:mb-0 z-20 fixed w-full top-0 px-4 lg:px-0 py-4 lg:py-8"
-      style={{ backgroundColor: "white" }}
+      className="mb-12 lg:mb-0 z-20 fixed w-full top-0 px-4 lg:px-0 py-4 lg:py-8 bg-gray-100"
+      style={{
+        // #F6FAFD
+        backgroundColor: "#F6FAFD",
+      }}
+      // style={{ backgroundColor: "white" }}
       // data-aos="fade-down"
       // data-aos-delay="1200"
       // data-aos-duration="1000"

@@ -13,6 +13,7 @@ import Product from "../components/Info/Product";
 import Review1 from "../components/Review/Review1";
 import Review2 from "../components/Review/Review2";
 
+import StatisticalHome from "../components/StatisticalHome";
 const Review = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
@@ -29,7 +30,7 @@ const Review = () => {
   return (
     <div className="overflow-hidden">
       <Banner2 />
-      <Statistical />
+      <StatisticalHome />
       <Review1 />
       <Review2 />
       <Footer />

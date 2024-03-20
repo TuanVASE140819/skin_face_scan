@@ -20,7 +20,7 @@ const Hero = () => {
   };
   return (
     <>
-      <section className="lg:h-[600px] mt-[6rem] hidden bg-gray-100 md:block">
+      <section className="lg:h-[600px] mt-[1rem] hidden  md:block">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">

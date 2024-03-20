@@ -8,7 +8,7 @@ const Statistical = () => {
   return (
     <>
       <section
-        className="absolute top-[41.5rem] flex justify-center mb-5 p-1 pr-10 pl-10 bg-gray-200 shadow-lg hidden md:flex"
+        className="flex justify-center mb-5 p-1 pr-10 pl-10 bg-gray-100 shadow-lg hidden md:flex"
         style={{
           marginLeft: "10%",
           marginRight: "10%",
@@ -20,13 +20,13 @@ const Statistical = () => {
       >
         {statisticalData.map((item, index) => {
           return (
-            <div className="flex items-center py-2  " key={index}>
+            <div className="flex items-center  " key={index}>
               <img src={item.image} alt="logo" className="w-10 h-10" />
               <div>
                 <div className="text-sm font-bold">
                   <CountUp end={item.title} />+
                 </div>
-                <div className="text-[0.8rem]">{item.subtitle}</div>
+                <div>{item.subtitle}</div>
               </div>
             </div>
           );

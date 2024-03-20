@@ -15,11 +15,12 @@ import Product from "../components/Info/Product";
 import News from "../components/Info/News";
 import Rule from "../components/Info/Rule";
 
+import StatisticalHome from "../components/StatisticalHome";
 const Information = () => {
   return (
     <div className="overflow-hidden">
       <Banner2 />
-      <Statistical />
+      <StatisticalHome />
       <Content />
       <Product />
       <Rule />

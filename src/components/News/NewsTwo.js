@@ -13,7 +13,7 @@ const NewsTwo = () => {
         {NewsTwoData.map((item, index) => (
           <div
             key={index}
-            className="flex shadow mb-3"
+            className="flex shadow mb-3 bg-slate-100 "
             style={{
               borderRadius: "2rem",
               overflow: "hidden",
@@ -27,8 +27,8 @@ const NewsTwo = () => {
               />
             </div>
             <div className="pt-4 pr-1 pl-1" style={{ flex: 0.75 }}>
-              <h1 className="h3-2 text-black">{item.title}</h1>
-              <p className="text-gray-500">{item.content}</p>
+              <h1 className="text-sm font-bold text-black">{item.title}</h1>
+              <p className="text-sm text-gray-500">{item.content}</p>
               <div className="flex items-center gap-x-4 p-4">
                 <div>
                   <img
@@ -49,7 +49,7 @@ const NewsTwo = () => {
 
       <div className="col-span-3">
         <img
-          className="w-full object-cover cursor-pointer"
+          className="w-full object-cover cursor-pointer rounded-lg"
           src={Bannernew}
           alt=""
         />

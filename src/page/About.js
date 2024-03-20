@@ -7,6 +7,7 @@ import { aboutData, contentInfoData } from "../data";
 import Hero from "../components/Hero";
 import Banner2 from "../components/Banner2";
 import Statistical from "../components/Statistical";
+import StatisticalHome from "../components/StatisticalHome";
 import About2 from "../components/About2";
 import Footer from "../components/Footer";
 
@@ -26,7 +27,7 @@ const About = () => {
   return (
     <div className="overflow-hidden">
       <Banner2 />
-      <Statistical />
+      <StatisticalHome />
       <About2 />
       <Footer />
     </div>

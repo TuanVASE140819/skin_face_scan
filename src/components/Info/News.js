@@ -8,6 +8,9 @@ import { contentNewsData } from "../../data";
 import Next from "../../../src/assets/img/button/next.png";
 import Prev from "../../../src/assets/img/button/prev.png";
 
+// import css
+import "../../page/index.css";
+
 const News = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
@@ -56,7 +59,7 @@ const settings = {
 };
 
 return (
-  <section>
+  <section className="container-new mx-auto my-5">
     <div className=" mx-auto container-product">
       {/* title */}
       <h1 className="h3-2 text-center">Hiểu Làn Da Của Bạn Hơn</h1>

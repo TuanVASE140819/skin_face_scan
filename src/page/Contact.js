@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import Contact1 from "../components/Contact/Contact1";
 import Statistical from "../components/Statistical";
 
+import StatisticalHome from "../components/StatisticalHome";
 const Contact = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
@@ -26,7 +27,7 @@ const Contact = () => {
   return (
     <div className="overflow-hidden">
       <Banner2 />
-      <Statistical />
+      <StatisticalHome />
       <Contact1 />
       <Footer />
     </div>
