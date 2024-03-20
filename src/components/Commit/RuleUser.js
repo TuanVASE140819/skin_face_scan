@@ -3,7 +3,7 @@ import { ruleDataUser } from "../../data";
 
 const RuleUser = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto hidden md:block">
       <div className="p-8 "></div>
       {/*  danh sách sẽ nằm trên 1 hàng */}
       <div className="flex flex-wrap justify-center">

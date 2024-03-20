@@ -24,7 +24,7 @@ const data = [
 ];
 const Chart = () => {
   return (
-    <section className="container my-[50pt] xl:mt-[100px] mx-auto flex justify-center items-center p-10">
+    <section className="container my-[50pt] xl:mt-[100px] mx-auto flex justify-center items-center p-10 hidden md:block">
       <div className="w-2/3 bg-gray-100 p-3 border-2 border-gray-200 rounded-lg">
         <LineChart
           width={600}
