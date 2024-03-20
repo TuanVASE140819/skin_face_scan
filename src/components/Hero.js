@@ -169,11 +169,8 @@ const Hero = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={{
-          // overlay: {
-          //   backgroundColor: 'rgba(0,0,0,0.5)'
-          // },
           content: {
-            top: "50%",
+            top: "55%",
             left: "50%",
             right: "auto",
             bottom: "auto",
@@ -186,8 +183,19 @@ const Hero = () => {
         }}
       >
         {/* 30rem có viền màu cam */}
-        <div className="bg-white w-[80rem] rounded-3xl overflow-hidden border border-orange-500">
-          {/*  dùng grid chia 2 côt 1 cột chiếm 2/3 1 cột chiếm 1/3 */}
+        <div className="bg-white w-[80rem] rounded-3xl overflow-hidden border border-orange-500 relative">
+          <button
+            onClick={closeModal}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              background: "transparent",
+              border: "none",
+            }}
+          >
+            X
+          </button>
           <div className="grid grid-cols-2">
             <div className="col-span-1 p-10">
               <h3 className="text-3xl font-bold text-start py-5">
@@ -267,12 +275,14 @@ const Hero = () => {
               </div>
 
               <button className="btn-primary flex items-center px-4 py-2 rounded-full shadow-lg mt-5">
-                <span className="pl-7 pr-7 text-white font-bold">
-                  Tôi đã hiểu
-                </span>
+                <a href="/skin_care_scan">
+                  <span className="pl-7 pr-7 text-white font-bold">
+                    Tôi đã hiểu
+                  </span>
+                </a>
               </button>
             </div>
-            <div className="col-span-1 p-10">
+            <div className="col-span-1 p-10 w-5/6">
               <img src={image} alt="" />
             </div>
           </div>
