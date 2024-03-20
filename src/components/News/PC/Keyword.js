@@ -1,5 +1,5 @@
 import React from "react";
-import { KeywordData } from "../../data";
+import { KeywordData } from "../../../data";
 
 const Keyword = () => {
   return (

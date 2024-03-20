@@ -80,7 +80,7 @@ const settings = {
 return (
   <>
     {/* chi khi ở màn hình pc thì mới hiện p-8 mx-auto container-product còn ở màn hình mobile thì không hiện */}
-    <section className="p-8 mx-auto container-product hidden md:block">
+    <section className="p-8 mx-auto container hidden md:block">
       <h1 className="h3-2 text-center">Khám Phá Sản Phẩm</h1>
       <h1 className="h3-2 text-orange-500 text-center">Trị Mụn</h1>
       <div>
@@ -117,7 +117,7 @@ return (
         </Slider>
       </div>
     </section>
-    <section className="p-8 mx-auto container-product hidden md:block">
+    <section className="p-8 mx-auto container hidden md:block">
       <h1 className="h3-2 text-center">Khám Phá Sản Phẩm Cải Thiện</h1>
       <h1 className="h3-2 text-orange-500 text-center">Làn Da Lão Hóa</h1>
       <div>

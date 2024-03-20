@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import About from "../components/About1";
 import Footer from "../components/Footer";
 import Statistical from "../components/Statistical";
@@ -8,17 +8,28 @@ import Content from "../components/Info/Content";
 import Product from "../components/Info/Product";
 import Newsindex from "../components/Info/News";
 import Rule from "../components/Info/Rule";
-import Keyword from "../components/News/Keyword";
-import NewsOne from "../components/News/NewsOne";
-import NewsTwo from "../components/News/NewsTwo";
+import Keyword from "../components/News/PC/Keyword";
+import NewsOne from "../components/News/PC/NewsOne";
+import NewsTwo from "../components/News/PC/NewsTwo";
+import MobileKeyword from "../components/News/Mobile/Keyword"; // Import the mobile version of the Keyword component
+import MobileNewsOne from "../components/News/Mobile/NewsOne"; // Import the mobile version of the NewsOne component
+import MobileNewsTwo from "../components/News/Mobile/NewsTwo"; // Import the mobile version of the NewsTwo component
 
 const News = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth <= 768);
+    });
+  }, []);
+
   return (
     <div className="overflow-hidden">
-      <Keyword />
-      <NewsOne />
+      {isMobile ? <MobileKeyword /> : <Keyword />}
+      {isMobile ? <MobileNewsOne /> : <NewsOne />}
       <Newsindex />
-      <NewsTwo />
+      {isMobile ? <MobileNewsTwo /> : <NewsTwo />}
       <Footer />
     </div>
   );

@@ -75,7 +75,7 @@ const settings = {
 };
   return (
     <>
-      <section className="p-8 mx-auto container-product">
+      <section className="container-new mx-auto my-5">
         <div>
           <Slider {...settings}>
             {productInfoData.map((item, index) => (

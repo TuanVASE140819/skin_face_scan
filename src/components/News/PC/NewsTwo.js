@@ -1,11 +1,11 @@
 import React from "react";
-import { NewsTwoData } from "../../data";
+import { NewsTwoData } from "../../../data";
 
-import Model4 from "../../assets/img/model/model4.png";
-import Model5 from "../../assets/img/model/model5.png";
-import Model6 from "../../assets/img/model/model6.png";
+import Model4 from "../../../assets/img/model/model4.png";
+import Model5 from "../../../assets/img/model/model5.png";
+import Model6 from "../../../assets/img/model/model6.png";
 // Bannernew
-import Bannernew from "../../assets/img/News/Bannernew.png";
+import Bannernew from "../../../assets/img/News/Bannernew.png";
 const NewsTwo = () => {
   return (
     <section className="container mx-auto grid grid-cols-10">

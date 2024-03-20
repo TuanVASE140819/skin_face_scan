@@ -66,6 +66,15 @@
   background-color: #ebaa9f;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: 0;}

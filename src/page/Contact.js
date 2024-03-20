@@ -12,18 +12,6 @@ import Statistical from "../components/Statistical";
 
 import StatisticalHome from "../components/StatisticalHome";
 const Contact = () => {
-  // destructure about
-  //   const { image, title, subtitle } = aboutData;
-
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-  };
   return (
     <div className="overflow-hidden">
       <Banner2 />

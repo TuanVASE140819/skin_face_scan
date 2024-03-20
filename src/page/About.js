@@ -12,18 +12,6 @@ import About2 from "../components/About2";
 import Footer from "../components/Footer";
 
 const About = () => {
-  // destructure about
-  //   const { image, title, subtitle } = aboutData;
-
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-  };
   return (
     <div className="overflow-hidden">
       <Banner2 />

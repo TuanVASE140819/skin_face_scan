@@ -1,9 +1,9 @@
 import React from "react";
-import { KeywordData } from "../../data";
+import { KeywordData } from "../../../data";
 
-import News4 from "../../assets/img/News/New4.png";
-import News5 from "../../assets/img/News/New5.png";
-import News6 from "../../assets/img/News/New6.png";
+import News4 from "../../../assets/img/News/New4.png";
+import News5 from "../../../assets/img/News/New5.png";
+import News6 from "../../../assets/img/News/New6.png";
 
 const NewsOne = () => {
   return (
