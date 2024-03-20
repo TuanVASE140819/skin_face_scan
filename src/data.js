@@ -92,20 +92,20 @@ export const navigationData = [
 
 export const heroData = {
   title: `Chuẩn Đoán Tình Trạng Da`,
-  title2: `Chỉ trong 7s`,
+  title2: `Chỉ Trong 7s`,
   subtitle:
     "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
-  btnText: "Trải nghiệm ngay",
+  btnText: "Trải Nghiệm Ngay",
   image: HeroImage,
   image2: QRImage,
 };
 
 export const infoData = {
   title: `Chuẩn Đoán Tình Trạng Da`,
-  title2: `Chỉ trong 7s`,
+  title2: `Chỉ Trong 7s`,
   subtitle:
     "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
-  btnText: "Trải nghiệm ngay",
+  btnText: "Trải Nghiệm Ngay",
   image: InforImage,
   image2: QRImage,
 };

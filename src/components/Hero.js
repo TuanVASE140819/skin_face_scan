@@ -25,7 +25,7 @@ const Hero = () => {
   }
   return (
     <>
-      <section className="lg:h-[600px] pt-40 hidden md:block">
+      <section className="lg:h-[600px] pt-[7rem] hidden md:block">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
@@ -49,20 +49,24 @@ const Hero = () => {
               </h1>
               {/* subtitle */}
               <p
-                className="lead xl:max-w-[380px] mb-6 lg:mb-12"
+                className="text-sm lead xl:max-w-[500px] mb-6 "
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
                 {subtitle}
               </p>
               <button
-                className="btn btn-primary mb-8 xl:mb-0"
+                className="btn btn-primary mb-8 xl:mb-0 text-sm "
                 style={{ display: "flex", alignItems: "center" }}
                 data-aos="fade-down"
                 data-aos-delay="600"
                 onClick={openModal}
               >
-                <img src={image2} alt="" className="w-10 h-10 mr-2 ripple" />
+                <img
+                  src={image2}
+                  alt=""
+                  className="w-10 h-10 mr-2 ripple text-sm "
+                />
                 {btnText}
               </button>
 
@@ -72,17 +76,17 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
-                <div className="flex flex-col mr-5 bg-gray-100 p-2 px-8 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
                   <div>Bước 1</div>
-                  <div className=" text-lg font-bold">Quét da</div>
+                  <div className=" text-sm font-bold">Quét da</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-100 p-2 px-8 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
                   <div>Bước 2:</div>
-                  <div className=" text-lg font-bold">Khảo sát chuyên sâu</div>
+                  <div className=" text-sm  font-bold">Khảo sát chuyên sâu</div>
                 </div>
-                <div className="flex flex-col mr-5 bg-gray-100 p-2 px-8 rounded-lg">
+                <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
                   <div>Bước 3:</div>
-                  <div className=" text-lg font-bold">Nhận kết quả</div>
+                  <div className=" text-sm font-bold">Nhận kết quả</div>
                 </div>
               </div>
             </div>
@@ -108,24 +112,10 @@ const Hero = () => {
           data-aos="fade-down"
           data-aos-delay="600"
         >
-          <div className="flex flex-col mr-5 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 1</div>
-            <div className="text-[0.8rem] font-bold">Quét da</div>
-          </div>
-          <div className="flex flex-col mr-5 bg-gray-200 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 2:</div>
-            <div className="text-[0.8rem] font-bold">Khảo sát chuyên sâu</div>
-          </div>
-          <div className="flex flex-col mr-5 bg-gray-200 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 3:</div>
-            <div className="text-[0.8rem] font-bold">Nhận kết quả</div>
-          </div>
+          {/* ... */}
         </div>
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
-            {/* text */}
-
-            {/* image */}
             <div
               className=" pt-5 xl:absolute xl:-right-12"
               data-aos="fade-up"
@@ -159,17 +149,18 @@ const Hero = () => {
               >
                 {subtitle}
               </p>
-              <button
-                className="btn btn-primary mb-8 xl:mb-0"
-                style={{ display: "flex", alignItems: "center" }}
-                data-aos="fade-down"
-                data-aos-delay="600"
-                onClick={openModal}
-              >
-                <img src={image2} alt="" className="w-5 h-5  ripple" />
-
-                <div className="pl-2">{btnText}</div>
-              </button>
+              <div className="flex justify-center">
+                <button
+                  className="btn btn-primary mb-8 xl:mb-0"
+                  style={{ display: "flex", alignItems: "center" }}
+                  data-aos="fade-down"
+                  data-aos-delay="600"
+                  onClick={openModal}
+                >
+                  <img src={image2} alt="" className="w-5 h-5  ripple" />
+                  <div className="pl-2">{btnText}</div>
+                </button>
+              </div>
             </div>
           </div>
         </div>

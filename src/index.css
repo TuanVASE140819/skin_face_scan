@@ -20,7 +20,7 @@
     @apply text-secondary font-semibold hover:text-accent-primary_hover transition;
   }
   .btn {
-    @apply text-lg h-[60px] px-[30px] rounded-full transition text-white;
+    @apply text-lg h-[40px] px-[20px] rounded-full transition text-white;
   }
   .btn-primary {
     @apply bg-accent-primary hover:bg-accent-primary_hover;
