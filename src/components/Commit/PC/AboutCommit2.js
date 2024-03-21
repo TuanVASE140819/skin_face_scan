@@ -1,7 +1,7 @@
 import React from "react";
 
 // import about data
-import { InforBanner2, InforBanner, InforBanner3 } from "../../data";
+import { InforBanner2, InforBanner, InforBanner3 } from "../../../data";
 
 const AboutCommit2 = () => {
   // destructure about
@@ -54,7 +54,6 @@ const AboutCommit2 = () => {
           </div>
         </div>
       </div>
-      ;
     </section>
   );
 };

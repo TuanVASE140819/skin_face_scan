@@ -1,7 +1,7 @@
 import React from "react";
 
 // import about data
-import { CommitBanner2 } from "../../data";
+import { CommitBanner2 } from "../../../data";
 
 const AboutCommit = () => {
   // destructure about

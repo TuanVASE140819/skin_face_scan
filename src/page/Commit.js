@@ -14,12 +14,12 @@ import Content from "../components/Info/Content";
 import Product from "../components/Info/Product";
 import News from "../components/Info/News";
 
-import RuleUser from "../components/Commit/RuleUser";
+import RuleUser from "../components/Commit/PC/RuleUser";
 import About2 from "../components/About2";
-import AboutCommit from "../components/Commit/AboutCommit";
-import AboutCommit2 from "../components/Commit/AboutCommit2";
-import Chart from "../components/Commit/Chart";
-
+import AboutCommit from "../components/Commit/PC/AboutCommit";
+import AboutCommit2 from "../components/Commit/PC/AboutCommit2";
+import Chart from "../components/Commit/PC/Chart";
+import ChartMB from "../components/Commit/Mobile/Chart";
 import StatisticalHome from "../components/StatisticalHome";
 import FooterMB from "../components/Footermb";
 const Commit = () => {
@@ -37,7 +37,7 @@ const Commit = () => {
       <StatisticalHome />
       <AboutCommit />
       <RuleUser />
-      <Chart />
+      {isMobile ? <ChartMB /> : <Chart />}
       <AboutCommit2 />
       {isMobile ? <FooterMB /> : <Footer />}
     </div>

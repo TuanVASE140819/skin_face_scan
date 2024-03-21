@@ -1,5 +1,5 @@
 import React from "react";
-import { ruleDataUser } from "../../data";
+import { ruleDataUser } from "../../../data";
 
 const RuleUser = () => {
   return (

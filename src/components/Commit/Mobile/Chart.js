@@ -22,18 +22,16 @@ const data = [
   { name: "Tháng 11", users: 239 },
   { name: "Tháng 12", users: 600 },
 ];
-const Chart = () => {
+const ChartMB = () => {
   return (
-    <section className="container my-[50pt] xl:mt-[100px] mx-auto flex justify-center items-center p-10 hidden md:block">
-      <div className="w-2/3 bg-gray-100 p-3 border-2 border-gray-200 rounded-lg">
+    <section className=" justify-center items-center container mx-auto">
+      <div className=" bg-gray-100 p-3 border-2 border-gray-200 rounded-lg justify-center items-center">
         <LineChart
-          width={600}
-          height={500}
+          width={340}
+          height={300}
           data={data}
           margin={{
             top: 5,
-
-            left: 20,
             bottom: 5,
           }}
         >
@@ -51,7 +49,7 @@ const Chart = () => {
         </LineChart>
         <p>Biểu đồ thể hiện số người tham gia theo từng tháng trong năm</p>
       </div>
-      <div className="w-1/3 flex flex-col space-y-4 pl-4">
+      <div className="flex flex-col space-y-4 pl-4">
         <div className="flex flex-col space-y-2">
           <div className="text-2xl text-orange-500 font-bold">Mục tiêu</div>
           <div className="flex space-x-2 ">
@@ -160,4 +158,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default ChartMB;
