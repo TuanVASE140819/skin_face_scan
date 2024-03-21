@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,26 +14,22 @@ import Review1 from "../components/Review/Review1";
 import Review2 from "../components/Review/Review2";
 
 import StatisticalHome from "../components/StatisticalHome";
+import FooterMB from "../components/Footermb";
 const Review = () => {
-  // destructure about
-  //   const { image, title, subtitle } = aboutData;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-  };
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth <= 768);
+    });
+  }, []);
   return (
     <div className="overflow-hidden">
       <Banner2 />
       <StatisticalHome />
       <Review1 />
       <Review2 />
-      <Footer />
+      {isMobile ? <FooterMB /> : <Footer />}
     </div>
   );
 };

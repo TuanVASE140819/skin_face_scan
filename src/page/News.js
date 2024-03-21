@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import About from "../components/About1";
-import Footer from "../components/Footer";
+
 import Statistical from "../components/Statistical";
 import Banner2 from "../components/Banner2";
 import { footerData, navigationData } from "../data";
@@ -14,7 +14,8 @@ import NewsTwo from "../components/News/PC/NewsTwo";
 import MobileKeyword from "../components/News/Mobile/Keyword"; // Import the mobile version of the Keyword component
 import MobileNewsOne from "../components/News/Mobile/NewsOne"; // Import the mobile version of the NewsOne component
 import MobileNewsTwo from "../components/News/Mobile/NewsTwo"; // Import the mobile version of the NewsTwo component
-
+import Footer from "../components/Footer";
+import FooterMB from "../components/Footermb";
 const News = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -30,7 +31,7 @@ const News = () => {
       {isMobile ? <MobileNewsOne /> : <NewsOne />}
       <Newsindex />
       {isMobile ? <MobileNewsTwo /> : <NewsTwo />}
-      <Footer />
+      {isMobile ? <FooterMB /> : <Footer />}
     </div>
   );
 };

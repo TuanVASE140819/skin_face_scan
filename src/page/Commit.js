@@ -1,6 +1,6 @@
 // tạo trang home chứa các component
 // import các component từ thư mục components
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import About from "../components/About1";
 import Features from "../components/Features";
@@ -21,7 +21,15 @@ import AboutCommit2 from "../components/Commit/AboutCommit2";
 import Chart from "../components/Commit/Chart";
 
 import StatisticalHome from "../components/StatisticalHome";
+import FooterMB from "../components/Footermb";
 const Commit = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth <= 768);
+    });
+  }, []);
   return (
     <div className="overflow-hidden">
       <Banner2 />
@@ -31,7 +39,7 @@ const Commit = () => {
       <RuleUser />
       <Chart />
       <AboutCommit2 />
-      <Footer />
+      {isMobile ? <FooterMB /> : <Footer />}
     </div>
   );
 };

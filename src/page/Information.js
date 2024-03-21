@@ -1,12 +1,13 @@
 // tạo trang home chứa các component
 // import các component từ thư mục components
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import About from "../components/About1";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
+import FooterMB from "../components/Footermb";
 import Statistical from "../components/Statistical";
 import Nav from "../components/Nav";
 import Banner2 from "../components/Banner2";
@@ -17,6 +18,13 @@ import Rule from "../components/Info/Rule";
 
 import StatisticalHome from "../components/StatisticalHome";
 const Information = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth <= 768);
+    });
+  }, []);
   return (
     <div className="overflow-hidden">
       <Banner2 />
@@ -26,7 +34,7 @@ const Information = () => {
       <Rule />
       <About />
       <News />
-      <Footer />
+      {isMobile ? <FooterMB /> : <Footer />}
     </div>
   );
 };
