@@ -15,6 +15,7 @@ import Review2 from "../components/Review/Review2";
 
 import StatisticalHome from "../components/StatisticalHome";
 import FooterMB from "../components/Footermb";
+import Banner2MB from "../components/Banner2mb";
 const Review = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -25,7 +26,7 @@ const Review = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <Banner2 />
+      {isMobile ? <Banner2MB /> : <Banner2 />}
       <StatisticalHome />
       <Review1 />
       <Review2 />

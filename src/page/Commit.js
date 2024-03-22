@@ -10,9 +10,7 @@ import Footer from "../components/Footer";
 import Statistical from "../components/Statistical";
 import Nav from "../components/Nav";
 import Banner2 from "../components/Banner2";
-import Content from "../components/Info/Content";
-import Product from "../components/Info/Product";
-import News from "../components/Info/News";
+import Banner2MB from "../components/Banner2mb";
 
 import RuleUser from "../components/Commit/PC/RuleUser";
 import About2 from "../components/About2";
@@ -32,8 +30,7 @@ const Commit = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <Banner2 />
-
+      {isMobile ? <Banner2MB /> : <Banner2 />}
       <StatisticalHome />
       <AboutCommit />
       <RuleUser />
