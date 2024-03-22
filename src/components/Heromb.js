@@ -98,7 +98,7 @@ const Hero = () => {
         onRequestClose={closeModal}
         style={{
           content: {
-            top: "410px",
+            top: "370px",
             left: "50%",
             right: "auto",
             bottom: "auto",
@@ -126,10 +126,10 @@ const Hero = () => {
           </button>
           <div className="grid grid-cols-2">
             <div className="col-span-2 p-10 ">
-              <h3 className="text-3xl font-bold text-start py-5">
+              <h3 className="text-3xl font-bold text-start">
                 Hướng Dẫn Sử Dụng
               </h3>
-              <h5 className="text-2xl font-bold text-start py-5">
+              <h5 className="text-2xl font-bold text-start ">
                 Chụp 4 góc mặt:
               </h5>
               {/*  tạo 4 hình ảnh nằm ngang */}
