@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,11 +11,14 @@ import "../../page/index.css";
 import Next from "../../../src/assets/img/button/next.png";
 import Prev from "../../../src/assets/img/button/prev.png";
 
+import apiClient from "../../utils/apiClient";
+
 import Modal from "react-modal";
+
 const Review1 = () => {
   // destructure about
   //   const { image, title, subtitle } = aboutData;
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [Reviews, setReviews] = useState([]);
   const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -41,49 +44,56 @@ const Review1 = () => {
       />
     );
   };
-const settings = {
-  // existing settings...
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1024, // this means screen sizes less than 1024px
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+
+  const settings = {
+    // existing settings...
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024, // this means screen sizes less than 1024px
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 768, // this means screen sizes less than 768px
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+      {
+        breakpoint: 768, // this means screen sizes less than 768px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 480, // this means screen sizes less than 480px
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 480, // this means screen sizes less than 480px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-  ],
-};
+    ],
+  };
+
+  useEffect(() => {
+    apiClient.getAllComments().then((response) => {
+      setReviews(response.data.slice(0, 3));
+    });
+  }, []); // Mảng phụ thuộc rỗng để đảm bảo rằng useEffect chỉ chạy một lần sau khi component được render
   return (
     <>
       <section className="container-new mx-auto my-5">
         <div>
           <Slider {...settings}>
-            {productInfoData.map((item, index) => (
+            {Reviews.map((item, index) => (
               <div className="p-8" key={index}>
-                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6 border border-orange-200 border-b-4 border-orange-500 rounded-lg shadow-lg">
-                  <figure class="max-w-screen-md mx-auto">
+                <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6 border border-orange-200 border-b-4 border-orange-500 rounded-lg shadow-lg">
+                  <figure className="max-w-screen-md mx-auto">
                     <svg
-                      class="h-12 mx-auto mb-3 text-orange-400 dark:text-orange-600"
+                      className="h-12 mx-auto mb-3 text-orange-400 dark:text-orange-600"
                       viewBox="0 0 24 27"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -94,24 +104,22 @@ const settings = {
                       ></path>
                     </svg>
                     <blockquote>
-                      <p class="text-xl  text-gray-900 md:text-2xl ">
-                        "Landwind is just awesome. It contains tons of
-                        predesigned components and pages starting from login
-                        screen to complex dashboard. Perfect choice for your
-                        next SaaS application."
+                      <p className="text-xl  text-gray-900 md:text-2xl ">
+                        {item.body.length > 150
+                          ? item.body.substring(0, 150) + "..."
+                          : item.body}
                       </p>
                     </blockquote>
-                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                    <figcaption className="flex items-center justify-center mt-6 space-x-3">
                       <img
-                        class="w-6 h-6 rounded-full"
+                        className="w-6 h-6 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                        alt="profile picture"
+                        alt=""
                       />
-                      <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                        <div class="pr-3 font-medium text-gray-900">
-                          Micheal Gough
+                      <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <div className="pr-3 font-medium text-gray-900">
+                          {item.name}
                         </div>
-                        
                       </div>
                     </figcaption>
                   </figure>
