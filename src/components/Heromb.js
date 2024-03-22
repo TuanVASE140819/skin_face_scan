@@ -98,7 +98,7 @@ const Hero = () => {
         onRequestClose={closeModal}
         style={{
           content: {
-            top: "450px",
+            top: "410px",
             left: "50%",
             right: "auto",
             bottom: "auto",
