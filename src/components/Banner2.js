@@ -9,7 +9,8 @@ import { heroData, infoData } from "../data";
 import "../page/index.css";
 const Hero = () => {
   // destructure hero
-  const { title, title2, subtitle, btnText, image, image2 } = infoData;
+  const { title, title2, subtitle, btnText, image, image2, imagegreen } =
+    infoData;
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const openModal = () => {
     setModalIsOpen(true);
@@ -36,7 +37,7 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="text-4xl xl:max-w-[700px] text-orange-500 font-bold"
+                className="text-4xl xl:max-w-[700px] text-green-500 font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -92,7 +93,7 @@ const Hero = () => {
               data-aos-delay="700"
             >
               <img
-                src={image}
+                src={imagegreen}
                 alt=""
                 className=""
                 style={{ width: "80%", height: "auto" }}

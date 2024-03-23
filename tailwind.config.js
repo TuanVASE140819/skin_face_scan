@@ -23,7 +23,7 @@ module.exports = {
         primary: "#212353",
         secondary: "#4B5D68",
         accent: {
-          primary: "#F58A78",
+          primary: "#00BE72",
           primary_hover: "#9059DB",
           secondary: "#F063B8",
           secondary_hover: "#E350A9",

@@ -4,7 +4,7 @@ import { statisticalData } from "../data";
 
 const Statistical = () => {
   // destructure hero
-  const { title, subtitle, image } = statisticalData;
+  const { title, subtitle, image, imagegreen } = statisticalData;
   return (
     <>
       <section

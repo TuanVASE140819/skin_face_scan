@@ -11,18 +11,17 @@ import '../page/index.css'
 import Model3 from '../../src/assets/img/model/model3.png'
 const Hero = () => {
   // destructure hero
-  const { title,title2, subtitle, btnText, image, image2} = heroData;
+  const { title, title2, subtitle, btnText, image, imagegreen, image2 } =
+    heroData;
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
-    
     setModalIsOpen(true);
-  }
-  
+  };
 
   const closeModal = () => {
     setModalIsOpen(false);
-  }
+  };
   return (
     <>
       <section className="lg:h-[600px] pt-[7rem] hidden md:block">
@@ -41,7 +40,7 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="text-4xl xl:max-w-[700px] text-orange-500 font-bold"
+                className="text-4xl xl:max-w-[700px] text-green-500 font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -97,7 +96,7 @@ const Hero = () => {
               data-aos-delay="700"
             >
               <img
-                src={image}
+                src={imagegreen}
                 alt=""
                 className=" ml-14"
                 style={{ width: "70%", height: "auto" }}
@@ -106,7 +105,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

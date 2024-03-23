@@ -21,7 +21,7 @@ const Statistical = () => {
         {statisticalData.map((item, index) => {
           return (
             <div className="flex items-center py-2  " key={index}>
-              <img src={item.image} alt="logo" className="w-10 h-10" />
+              <img src={item.imagegreen} alt="logo" className="w-10 h-10" />
               <div>
                 <div className="text-sm font-bold">
                   <CountUp end={item.title} />+

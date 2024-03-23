@@ -8,7 +8,8 @@ import { heroData } from "../data";
 import "../page/index.css";
 const Hero = () => {
   // destructure hero
-  const { title, title2, subtitle, btnText, image, image2 } = heroData;
+  const { title, title2, subtitle, btnText, image, image2, imagegreen } =
+    heroData;
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -87,7 +88,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <img src={image} alt="" />
+              <img src={imagegreen} alt="" />
             </div>
           </div>
         </div>

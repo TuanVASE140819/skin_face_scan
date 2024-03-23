@@ -13,7 +13,9 @@ import Avatar2Img from '../src/assets/img/testimonials/avatar2.png';
 import Avatar3Img from '../src/assets/img/testimonials/avatar3.png';
 import LogoV2 from '../src/assets/img/logo-v2.png';
 import HeroImage from '../src/assets/img/aigirl.png';
+import HeroImage2 from "../src/assets/img/aigirl2.png";
 import InforImage from "../src/assets/img/inforindex.png";
+import InforImage2 from "../src/assets/img/green/banner2.png";
 import Feature1BgImg from "../src/assets/img/features/feature1_bg.png";
 import Feature2BgImg from "../src/assets/img/features/feature2_bg.png";
 import Feature3BgImg from "../src/assets/img/features/feature3_bg.png";
@@ -24,6 +26,12 @@ import bacsi from "../src/assets/img/human2.png";
 import light from "../src/assets/img/den.png";
 import image from "../src/assets/img/hinh.png";
 import product from "../src/assets/img/giay.png";
+
+import usergreen from "../src/assets/img/green/human.png";
+import bacsigreen from "../src/assets/img/green/bacsi.png";
+import lightgreen from "../src/assets/img/green/light.png";
+import imagegreen from "../src/assets/img/green/img.png";
+import productgreen from "../src/assets/img/green/page.png";
 
 // model 1
 import Model1 from "../src/assets/img/model/model1.png";
@@ -47,8 +55,6 @@ import Rule2 from "../src/assets/img/infor/Icon/Icon2.png";
 import Rule3 from "../src/assets/img/infor/Icon/Icon3.png";
 import Rule4 from "../src/assets/img/infor/Icon/Icon4.png";
 
-
-
 import Model4 from "../src/assets/img/model/model4.png";
 import Model5 from "../src/assets/img/model/model5.png";
 import Model6 from "../src/assets/img/model/model6.png";
@@ -57,7 +63,7 @@ import Model6 from "../src/assets/img/model/model6.png";
 import InforBannerImg from "../src/assets/img/model/model_banner.png";
 import InforBannerImg2 from "../src/assets/img/About/banner.png";
 import InforBannerImg3 from "../src/assets/img/About/banner2.png";
-// Commit 
+// Commit
 import CommitBannerImg from "../src/assets/img/Commit/About2.png";
 export const navigationData = [
   {
@@ -97,6 +103,7 @@ export const heroData = {
     "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
   btnText: "Trải Nghiệm Ngay",
   image: HeroImage,
+  imagegreen: HeroImage2,
   image2: QRImage,
 };
 
@@ -107,6 +114,7 @@ export const infoData = {
     "Ứng dụng phân tích chuẩn đoán da tích hợp trí tuệ thông minh nhân tạo AI chỉ trong 3 bước thưc hiên đã nhận ngay kết quả.",
   btnText: "Trải Nghiệm Ngay",
   image: InforImage,
+  imagegreen: InforImage2,
   image2: QRImage,
 };
 
@@ -115,26 +123,31 @@ export const statisticalData = [
     title: "2000",
     subtitle: "Số người dùng trải nghiệm",
     image: user,
+    imagegreen: usergreen,
   },
   {
     title: "500",
     subtitle: "Bác sĩ cho lời khuyên về da",
     image: bacsi,
+    imagegreen: bacsigreen,
   },
   {
     title: "2000",
     subtitle: "Nghiên cứu và Ứng dụng",
     image: light,
+    imagegreen: lightgreen,
   },
   {
     title: "45000000",
     subtitle: "Hình ảnh được xử lý chuẩn đoán phân tích",
     image: image,
+    imagegreen: imagegreen,
   },
   {
     title: "20",
     subtitle: "Sản phẩm cấp bằng sáng chế",
     image: product,
+    imagegreen: productgreen,
   },
 ];
 
