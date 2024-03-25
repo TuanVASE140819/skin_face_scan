@@ -46,7 +46,7 @@ const Result = () => {
               />
               <div className="mt-5 space-x-5 flex justify-center">
                 <button className="px-10 py-2 border rounded-full shadow min-w-[10rem]">
-                  Scrennshot
+                  ScreenShot
                 </button>
                 <button className="px-10 py-2 border rounded-full shadow min-w-[10rem]">
                   Upload
