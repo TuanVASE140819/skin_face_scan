@@ -38,6 +38,11 @@ i18n.use(initReactI18next).init({
         content_title_3: "Our Commitment",
         content_title_sub_3: "To You",
         discover: "Discover",
+        //Rule
+        rule_1: " Guarantee ",
+        rule_2: "Information Security",
+        rule_3: "Latest Technology",
+        rule_4: "Experience",
       },
     },
     vi: {
@@ -75,6 +80,11 @@ i18n.use(initReactI18next).init({
         content_title_3: "Cam Kết",
         content_title_sub_3: "Của Chúng Tôi",
         discover: "Khám Phá",
+        //Rule
+        rule_1: " Đảm Bảo ",
+        rule_2: "Bảo Mật Thông Tin ",
+        rule_3: "Công Nghệ Mới Nhất",
+        rule_4: "Trải Nghiệm",
       },
     },
   },
