@@ -1,28 +1,24 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-// import hero data
-import { heroData } from '../data';
+import { heroData } from "../data";
 
-// import components
-// import  css
-import '../page/index.css'
+import "../page/index.css";
 
-import Model3 from '../../src/assets/img/model/model3.png'
+import { useTranslation } from "react-i18next";
 const Hero = () => {
   // destructure hero
-  const { title,title2, subtitle, btnText, image, image2} = heroData;
+  const { title, title2, subtitle, btnText, image, image2 } = heroData;
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
-    
     setModalIsOpen(true);
-  }
-  
+  };
 
   const closeModal = () => {
     setModalIsOpen(false);
-  }
+  };
+  const { t } = useTranslation();
   return (
     <>
       <section className="lg:h-[600px] pt-[7rem] hidden md:block">
@@ -37,7 +33,7 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                {title}
+                {t("hero_title")}
               </h1>
 
               <h1
@@ -45,7 +41,7 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                {title2}
+                {t("hero_title_1")}
               </h1>
               {/* subtitle */}
               <p
@@ -53,7 +49,7 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
-                {subtitle}
+                {t("hero_content")}
               </p>
               <button
                 className="btn btn-primary mb-8 xl:mb-0 text-sm "
@@ -67,7 +63,7 @@ const Hero = () => {
                   alt=""
                   className="w-10 h-10 mr-2 ripple text-sm "
                 />
-                {btnText}
+                <div className="pl-2">{t("scan_now")}</div>
               </button>
 
               {/* tạo ra 3 nút nằm ngang */}
@@ -77,16 +73,22 @@ const Hero = () => {
                 data-aos-delay="600"
               >
                 <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
-                  <div>Bước 1</div>
-                  <div className=" text-sm font-bold">Quét da</div>
+                  <div>{t("hero_step_1")}</div>
+                  <div className=" text-sm font-bold">
+                    {t("hero_content_1")}
+                  </div>
                 </div>
                 <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
-                  <div>Bước 2:</div>
-                  <div className=" text-sm  font-bold">Khảo sát chuyên sâu</div>
+                  <div>{t("hero_step_2")}</div>
+                  <div className=" text-sm  font-bold">
+                    {t("hero_content_2")}
+                  </div>
                 </div>
                 <div className="flex flex-col mr-5 text-sm  bg-gray-100 p-2 px-8 rounded-lg">
-                  <div>Bước 3:</div>
-                  <div className=" text-sm font-bold">Nhận kết quả</div>
+                  <div>{t("hero_step_3")}</div>
+                  <div className=" text-sm font-bold">
+                    {t("hero_content_3")}
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,7 +108,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

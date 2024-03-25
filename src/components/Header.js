@@ -8,6 +8,7 @@ import NavMobile from "./NavMobile";
 // import icons
 import { FaBars } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
+import LanguageSwitch from "./LanguageSwitch";
 
 const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
@@ -38,6 +39,12 @@ const Header = () => {
             >
               <Nav />
             </div>
+                        <div
+                          className="hidden lg:flex gap-x-8 items-center"
+                          // style={{ marginRight: "auto" }}
+                        >
+                          <LanguageSwitch />
+                        </div>
           </div>
 
           {/* mobile nav / initially is showing / hide on large screens */}
