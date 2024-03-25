@@ -24,7 +24,7 @@ const Content = () => {
         {/* title */}
         <h1 className="h3-2 text-center">Chăm Sóc Sức Khỏe</h1>
 
-        <h1 className="h3-2 text-orange-500 text-center">
+        <h1 className="h3-2 text-green-500 text-center">
           Làn Da Tốt Nhất Cho Mọi Loại Da
         </h1>
 

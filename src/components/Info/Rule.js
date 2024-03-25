@@ -5,7 +5,7 @@ const Rule = () => {
   return (
     <section className="container mx-auto">
       <div className="p-8 ">
-        <h1 className="h3-2 text-orange-500 text-center">
+        <h1 className="h3-2 text-green-500 text-center">
           Cam kết
           <span className="text-black"> Của Chúng Tôi</span>
         </h1>
@@ -14,7 +14,7 @@ const Rule = () => {
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {ruleData.map((item, index) => (
           <div
-            className="p-10 sm:p-6 md:p-10 min-w-[5rem] sm:min-w-[7rem] md:min-w-[10rem] zoom border border-orange-500 border-solid rounded-lg"
+            className="p-10 sm:p-6 md:p-10 min-w-[5rem] sm:min-w-[7rem] md:min-w-[10rem] zoom border border-green-500 border-solid rounded-lg"
             key={index}
           >
             <div className="justify-center items-center">
@@ -22,7 +22,9 @@ const Rule = () => {
                 <img
                   className="w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 object-cover"
                   src={
-                    item.image ? item.image : "https://via.placeholder.com/300"
+                    item.imagegreen
+                      ? item.imagegreen
+                      : "https://via.placeholder.com/300"
                   }
                   alt={item.title}
                 />

@@ -66,7 +66,7 @@ const Result = () => {
                   <div className="flex items-center justify-center text-xl font-bold">
                     7/10
                   </div>
-                  <div className="flex items-center justify-center text-sm font-bold animated-text text-orange-500">
+                  <div className="flex items-center justify-center text-sm font-bold animated-text text-green-500">
                     <button onClick={openModal}>Nguyên nhân & Giải pháp</button>
                     <Modal
                       isOpen={modalIsOpen}

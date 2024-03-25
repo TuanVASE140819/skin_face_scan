@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 
 // import hero data
-import { heroData } from '../data';
+import { heroData, ThameData } from "../data";
 
 // import components
 // import  css
-import '../page/index.css'
+import "../page/index.css";
 
-import Model3 from '../../src/assets/img/model/model3.png'
+import Model3 from "../../src/assets/img/model/model3.png";
 const Hero = () => {
   // destructure hero
+  const textClass =
+    ThameData === "green" ? "text-green-500" : "text-orange-500";
   const { title, title2, subtitle, btnText, image, imagegreen, image2 } =
     heroData;
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
   const openModal = () => {
     setModalIsOpen(true);
   };
@@ -40,7 +41,7 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="text-4xl xl:max-w-[700px] text-green-500 font-bold"
+                className={`text-4xl xl:max-w-[700px]  font-bold ${textClass}`}
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -124,7 +125,9 @@ const Hero = () => {
         }}
       >
         {/* 30rem có viền màu cam */}
-        <div className="bg-white w-[80rem] rounded-3xl overflow-hidden border border-orange-500 relative">
+        <div
+          className={`bg - white w-[80rem] rounded-3xl overflow-hidden border border-orange-500 relative ${textClass}`}
+        >
           <button
             onClick={closeModal}
             style={{

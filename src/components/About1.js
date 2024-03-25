@@ -19,7 +19,7 @@ const About1 = () => {
               {title1}
             </h2>
             <h2
-              className="h2 text-6xl text-orange-500 font-bold"
+              className="h2 text-6xl text-green-500 font-bold"
               data-aos="fade-up"
               data-aos-delay="300"
             >

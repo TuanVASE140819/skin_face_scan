@@ -51,7 +51,7 @@ const ChartMB = () => {
       </div>
       <div className="flex flex-col space-y-4 pl-4">
         <div className="flex flex-col space-y-2">
-          <div className="text-2xl text-orange-500 font-bold">Mục tiêu</div>
+          <div className="text-2xl text-green-500 font-bold">Mục tiêu</div>
           <div className="flex space-x-2 ">
             <img
               className="w-10 h-10 object-cover rounded-full"

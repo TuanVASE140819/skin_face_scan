@@ -90,10 +90,10 @@ const Review1 = () => {
           <Slider {...settings}>
             {Reviews.map((item, index) => (
               <div className="p-8" key={index}>
-                <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6 border border-orange-200 border-b-4 border-orange-500 rounded-lg shadow-lg">
+                <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6 border border-orange-200 border-b-4 border-green-500 rounded-lg shadow-lg">
                   <figure className="max-w-screen-md mx-auto">
                     <svg
-                      className="h-12 mx-auto mb-3 text-orange-400 dark:text-orange-600"
+                      className="h-12 mx-auto mb-3 text-green-400 dark:text-green-600"
                       viewBox="0 0 24 27"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"

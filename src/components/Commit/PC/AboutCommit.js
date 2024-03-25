@@ -19,7 +19,7 @@ const AboutCommit = () => {
           </div>
           <div className="flex-1 xl:pr-12">
             <h2
-              className="h2 text-4xl text-orange-500 font-bold"
+              className="h2 text-4xl text-green-500 font-bold"
               // data-aos="fade-up"
               // data-aos-delay="300"
             >

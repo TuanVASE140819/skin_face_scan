@@ -18,7 +18,9 @@ const RuleUser = () => {
                 <img
                   className="w-30 h-30 object-cover"
                   src={
-                    item.image ? item.image : "https://via.placeholder.com/300"
+                    item.imagegreen
+                      ? item.imagegreen
+                      : "https://via.placeholder.com/300"
                   }
                   alt={item.title}
                 />

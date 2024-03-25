@@ -22,7 +22,7 @@ const Footer = () => {
   } = footerData;
   return (
     <>
-      <footer className="mt-20 hidden md:block bg-slate-100 pt-10 border-t-2 border-orange-300">
+      <footer className="mt-20 hidden md:block bg-slate-100 pt-10 border-t-2 border-green-300">
         <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row text-center xl:text-left gap-y-12">
             {/* info */}

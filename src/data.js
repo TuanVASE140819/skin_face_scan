@@ -63,8 +63,15 @@ import Model6 from "../src/assets/img/model/model6.png";
 import InforBannerImg from "../src/assets/img/model/model_banner.png";
 import InforBannerImg2 from "../src/assets/img/About/banner.png";
 import InforBannerImg3 from "../src/assets/img/About/banner2.png";
+import InforBannerImgGreen from "../src/assets/img/green/banner22.png";
 // Commit
 import CommitBannerImg from "../src/assets/img/Commit/About2.png";
+// Green
+import Rulegreen1 from "../src/assets/img/green/combo1.png";
+import Rulegreen2 from "../src/assets/img/green/combo2.png";
+import Rulegreen3 from "../src/assets/img/green/combo3.png";
+import Rulegreen4 from "../src/assets/img/green/combo4.png";
+
 export const navigationData = [
   {
     name: "Thông tin",
@@ -221,40 +228,49 @@ export const productInfoData = [
 export const ruleData = [
   {
     image: Rule1,
+    imagegreen: Rulegreen1,
     title: "Đảm Bảo",
   },
   {
     image: Rule2,
+    imagegreen: Rulegreen2,
     title: "Bảo Mật Thông Tin",
   },
   {
     image: Rule3,
+    imagegreen: Rulegreen3,
     title: "Công Nghệ Mới Nhất",
   },
   {
     image: Rule4,
+    imagegreen: Rulegreen4,
     title: "Trải Nghiệm",
   },
 ];
 export const ruleDataUser = [
   {
     image: Rule1,
+    imagegreen: Rulegreen1,
     title: "100% người dùng đã đồng ý",
   },
   {
     image: Rule2,
+    imagegreen: Rulegreen2,
     title: "Giải pháp thiết yếu",
   },
   {
     image: Rule3,
+    imagegreen: Rulegreen3,
     title: "Công nghệ AI",
   },
   {
     image: Rule4,
+    imagegreen: Rulegreen4,
     title: "Trải Nghiệm",
   },
   {
     image: Rule1,
+    imagegreen: Rulegreen1,
     title: "Chứng nhận viện nghiên cứu",
   },
 ];
@@ -297,6 +313,7 @@ export const InforBanner2 = {
 };
 export const InforBanner3 = {
   image1: InforBannerImg3,
+  imagegreen: InforBannerImgGreen,
   title11: "Tầm nhìn sứ mệnh",
   title21: "Lorem ipsum dolor ",
   title31: "sit amet",
@@ -568,3 +585,6 @@ export const copyrightData = {
   text: '© Product Texas, 2022. All rights reserved. Company Registration Number: 09833888.',
   icon: <BsChatDotsFill />,
 };
+
+
+export const ThameData = "green"  // green or blue

@@ -29,7 +29,7 @@ const NewsOne = () => {
                 />
               </div>
               <div className="p-4">
-                <span className="text-orange-500 text-sm font-bold p-2">
+                <span className="text-green-500 text-sm font-bold p-2">
                   #Lorem, #ipsum, #dolor
                 </span>
                 <div className="pr-4 pl-4">
@@ -78,7 +78,7 @@ const NewsOne = () => {
                 />
               </div>
               <div className="pt-4 pr-1 pl-1" style={{ flex: 1 }}>
-                <span className="text-orange-500 text-sm font-bold p-2">
+                <span className="text-green-500 text-sm font-bold p-2">
                   #Lorem, #ipsum, #dolor
                 </span>
                 <h1 className="text-sm font-bold text-black">
@@ -120,7 +120,7 @@ const NewsOne = () => {
                 />
               </div>
               <div className="pt-4 pr-1 pl-1" style={{ flex: 1 }}>
-                <span className="text-orange-500 text-sm font-bold p-2">
+                <span className="text-green-500 text-sm font-bold p-2">
                   #Lorem, #ipsum, #dolor
                 </span>
                 <h1 className="text-sm font-bold text-black">
