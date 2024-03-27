@@ -32,7 +32,7 @@ const Content = () => {
         <Slider {...settings}>
           {contentInfoData.map((item, index) => (
             <div className="p-8  " key={index}>
-              <div className="rounded overflow-hidden shadow-lg zoom">
+              <div className="rounded overflow-hidden shadow-lg zoom rounded-2xl">
                 <img
                   className="w-96 h-96 object-cover"
                   src={
