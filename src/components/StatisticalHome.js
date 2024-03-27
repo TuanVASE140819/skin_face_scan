@@ -27,49 +27,49 @@ const Statistical = () => {
       >
         {/* 2000,500,2000,45000000, 20 */}
 
-        <div className="flex items-center py-2  ">
+        <div className="flex items-center py-2 pr-6">
           <img src={user} alt="logo" className="w-10 h-10" />
           <div>
-            <div className="text-sm font-bold">
+            <div className="text-[0.8rem] font-bold">
               <CountUp end="2000" />+
             </div>
-            <div className="text-[0.8rem]">{t("user")}</div>
+            <div className="text-[0.6rem]">{t("user")}</div>
           </div>
         </div>
-        <div className="flex items-center py-2  ">
+        <div className="flex items-center py-2 pr-6">
           <img src={bacsi} alt="logo" className="w-10 h-10" />
           <div>
-            <div className="text-sm font-bold">
+            <div className="text-[0.8rem] font-bold">
               <CountUp end="500" />+
             </div>
-            <div className="text-[0.8rem]">{t("doctor")}</div>
+            <div className="text-[0.6rem]">{t("doctor")}</div>
           </div>
         </div>
-        <div className="flex items-center py-2  ">
+        <div className="flex items-center py-2 pr-6">
           <img src={light} alt="logo" className="w-10 h-10" />
           <div>
-            <div className="text-sm font-bold">
+            <div className="text-[0.8rem] font-bold">
               <CountUp end="2000" />+
             </div>
-            <div className="text-[0.8rem]">{t("analyzed_image")}</div>
+            <div className="text-[0.6rem]">{t("analyzed_image")}</div>
           </div>
         </div>
-        <div className="flex items-center py-2  ">
+        <div className="flex items-center py-2 pr-6">
           <img src={user} alt="logo" className="w-10 h-10" />
           <div>
-            <div className="text-sm font-bold">
+            <div className="text-[0.8rem] font-bold">
               <CountUp end="45000000" />+
             </div>
-            <div className="text-[0.8rem]">{t("application")}</div>
+            <div className="text-[0.6rem]">{t("application")}</div>
           </div>
         </div>
-        <div className="flex items-center py-2  ">
+        <div className="flex items-center py-2 pr-6">
           <img src={user} alt="logo" className="w-10 h-10" />
           <div>
-            <div className="text-sm font-bold">
+            <div className="text-[0.8rem] font-bold">
               <CountUp end="20" />+
             </div>
-            <div className="text-[0.8rem]">{t("patented_product")}</div>
+            <div className="text-[0.6rem]">{t("patented_product")}</div>
           </div>
         </div>
       </section>

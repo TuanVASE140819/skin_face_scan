@@ -29,17 +29,17 @@ const Hero = () => {
           data-aos="fade-down"
           data-aos-delay="600"
         >
-          <div className="flex flex-col mr-5 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 1</div>
-            <div className="text-[0.8rem] font-bold">Quét da</div>
+          <div className="flex flex-col mr-5 px-3 rounded-lg glass shadow-lg">
+            <div className="text-[0.6rem]">Bước 1</div>
+            <div className="text-[0.6rem] font-bold">Quét da</div>
           </div>
-          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 2:</div>
-            <div className="text-[0.8rem] font-bold">Khảo sát chuyên sâu</div>
+          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass shadow-lg">
+            <div className="text-[0.6rem]">Bước 2:</div>
+            <div className="text-[0.6rem] font-bold">Khảo sát chuyên sâu</div>
           </div>
-          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass">
-            <div className="text-[0.8rem]">Bước 3:</div>
-            <div className="text-[0.8rem] font-bold">Nhận kết quả</div>
+          <div className="flex flex-col mr-5 bg-gray-100 px-3 rounded-lg glass shadow-lg">
+            <div className="text-[0.6rem]">Bước 3:</div>
+            <div className="text-[0.6rem] font-bold">Nhận kết quả</div>
           </div>
         </div>
         <div className="container mx-auto h-full relative">
@@ -62,13 +62,13 @@ const Hero = () => {
                 {title}
               </h1>
 
-              <h1
+              {/* <h1
                 className="h2 xl:max-w-[700px] text-orange-500"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
                 {title2}
-              </h1>
+              </h1> */}
               {/* subtitle */}
               <p
                 className="lead xl:max-w-[380px] mb-6 lg:mb-12"

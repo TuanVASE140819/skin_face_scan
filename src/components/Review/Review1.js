@@ -104,7 +104,7 @@ const Review1 = () => {
                       ></path>
                     </svg>
                     <blockquote>
-                      <p className="text-xl  text-gray-900 md:text-2xl ">
+                      <p className="text-xs text-gray-900 md:text-xs ">
                         {item.body.length > 150
                           ? item.body.substring(0, 150) + "..."
                           : item.body}
@@ -117,7 +117,7 @@ const Review1 = () => {
                         alt=""
                       />
                       <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                        <div className="pr-3 font-medium text-gray-900">
+                        <div className="pr-3 text-xs font-medium text-gray-900">
                           {item.name}
                         </div>
                       </div>

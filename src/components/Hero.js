@@ -37,7 +37,7 @@ const Hero = () => {
               </h1>
 
               <h1
-                className="text-4xl xl:max-w-[700px] text-orange-500 font-bold"
+                className="text-4xl xl:max-w-[700px] text-[#f58a78] font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
