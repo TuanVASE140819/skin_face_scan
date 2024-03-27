@@ -60,13 +60,13 @@ const settings = {
 
 return (
   <section className="container-new mx-auto my-5">
-    <div className=" mx-auto container-product">
+    <div className="">
       {/* title */}
       <h1 className="h3-2 text-center">Hiểu Làn Da Của Bạn Hơn</h1>
 
       <Slider {...settings}>
         {contentNewsData.map((item, index) => (
-          <div className="p-8" key={index}>
+          <div className="p-3 " key={index}>
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow ">
               <img
                 className="w-full border-b border-r rounded-lg"
@@ -77,12 +77,12 @@ return (
               />
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <div className="mb-2 text-sm text-primary1">{item.tag}</div>
-                <h5 className="mb-2 text-xs md:text-2xl font-bold tracking-tight text-gray-900">
+                <h5 className="mb-2 text-sm md:text-sm font-bold tracking-tight text-gray-900">
                   {item.title.length > 40
                     ? item.title.substring(0, 40) + "..."
                     : item.title}
                 </h5>
-                <p className="mb-3 text-xs md:text-base font-normal text-gray-700">
+                <p className="mb-3 text-sm md:text-base font-normal text-gray-700">
                   {item.content.length > 100
                     ? item.content.substring(0, 100) + "..."
                     : item.content}
