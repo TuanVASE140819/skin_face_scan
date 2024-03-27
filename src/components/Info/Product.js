@@ -92,7 +92,7 @@ const Product = () => {
           <Slider {...settings}>
             {productInfoData.map((item, index) => (
               <div
-                className="p-8"
+                className="p-3"
                 key={index}
                 onClick={() => handleProductClick(item)}
               >
@@ -132,7 +132,7 @@ const Product = () => {
             {productInfoData.map((item, index) => (
               // dùng flex chia 2 cột
               <div
-                className="p-8"
+                className="p-3"
                 key={index}
                 onClick={() => handleProductClick(item)}
               >
