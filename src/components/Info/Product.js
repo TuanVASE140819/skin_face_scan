@@ -55,13 +55,13 @@ const Product = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    speed: 5000,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     centerPadding: "1rem", // add padding
     responsive: [
       {
