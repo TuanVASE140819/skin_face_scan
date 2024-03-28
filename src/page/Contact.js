@@ -23,8 +23,8 @@ const Contact = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      {isMobile ? <Banner2MB /> : <Banner2 />}
-      <StatisticalHome />
+      {/* {isMobile ? <Banner2MB /> : <Banner2 />}
+      <StatisticalHome /> */}
       <Contact1 />
       {isMobile ? <FooterMB /> : <Footer />}
     </div>

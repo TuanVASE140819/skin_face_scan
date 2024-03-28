@@ -30,8 +30,8 @@ const Commit = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      {isMobile ? <Banner2MB /> : <Banner2 />}
-      <StatisticalHome />
+      {/* {isMobile ? <Banner2MB /> : <Banner2 />}
+      <StatisticalHome /> */}
       <AboutCommit />
       <RuleUser />
       {isMobile ? <ChartMB /> : <Chart />}

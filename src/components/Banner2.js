@@ -33,32 +33,32 @@ const Hero = () => {
               {/* title */}
               <h1
                 className="text-4xl xl:max-w-[700px] font-bold"
-                data-aos="fade-down"
-                data-aos-delay="400"
+                // data-aos="fade-down"
+                // data-aos-delay="400"
               >
                 {t("hero_title")}
               </h1>
 
               <h1
                 className="text-4xl xl:max-w-[700px] text-[#f58a78] font-bold"
-                data-aos="fade-down"
-                data-aos-delay="400"
+                // data-aos="fade-down"
+                // data-aos-delay="400"
               >
                 {t("hero_title_1")}
               </h1>
               {/* subtitle */}
               <p
                 className="text-sm lead xl:max-w-[500px] mb-6 "
-                data-aos="fade-down"
-                data-aos-delay="500"
+                // data-aos="fade-down"
+                // data-aos-delay="500"
               >
                 {t("hero_content")}
               </p>
               <button
                 className="btn btn-primary mb-8 xl:mb-0 text-sm "
                 style={{ display: "flex", alignItems: "center" }}
-                data-aos="fade-down"
-                data-aos-delay="600"
+                // data-aos="fade-down"
+                // data-aos-delay="600"
                 onClick={openModal}
               >
                 <img
@@ -72,8 +72,8 @@ const Hero = () => {
               {/* tạo ra 3 nút nằm ngang */}
               <div
                 className="flex justify-center pt-5 pr-5"
-                data-aos="fade-down"
-                data-aos-delay="600"
+                // data-aos="fade-down"
+                // data-aos-delay="600"
               >
                 <div className="flex flex-col mr-5 text-sm  bg-gray-200 p-2 px-8 rounded-lg">
                   <div>{t("hero_step_1")}</div>
@@ -98,8 +98,8 @@ const Hero = () => {
             {/* image */}
             <div
               className=" pt-5 xl:absolute xl:-right-12"
-              data-aos="fade-up"
-              data-aos-delay="700"
+              // data-aos="fade-up"
+              // data-aos-delay="700"
             >
               <img
                 src={image}
@@ -114,8 +114,8 @@ const Hero = () => {
       <section className="lg:h-[830px] block md:hidden pt-20 bg-gray-100">
         <div
           className="flex justify-center pt-5"
-          data-aos="fade-down"
-          data-aos-delay="600"
+          // data-aos="fade-down"
+          // data-aos-delay="600"
         >
           <div className="flex flex-col mr-5 px-3 rounded-lg glass">
             <div className="text-[0.8rem]">Bước 1</div>

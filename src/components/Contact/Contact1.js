@@ -30,7 +30,7 @@ const Contact1 = () => {
     }
   };
   return (
-    <section className="text-gray-600 body-font relative container mx-auto">
+    <section className="text-gray-600 mt-[10rem] body-font relative container mx-auto">
       <div className="absolute inset-0 bg-gray-300">
         <iframe
           width="100%"
