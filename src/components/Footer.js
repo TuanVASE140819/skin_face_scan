@@ -9,17 +9,7 @@ import { Input } from "postcss";
 
 const Footer = () => {
   // destructure footer data
-  const {
-    logo,
-    address,
-    email,
-    content,
-    phone,
-    list1,
-    list2,
-    list3,
-    socialList,
-  } = footerData;
+  
   return (
     <>
       <footer className="mt-20 hidden md:block bg-slate-100 pt-10 border-t-2 border-orange-300">
@@ -47,30 +37,14 @@ const Footer = () => {
                   Về chúng tôi
                 </div>
                 <ul className="flex flex-col gap-y-4">
-                  {list1.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a className="text-primary" href={item.href}>
-                          {item.name}
-                        </a>
-                      </li>
-                    );
-                  })}
+                
                 </ul>
               </div>
               {/* list 1 */}
               <div>
                 <div className="font-extrabold text-primary mb-8">Hỗ trợ</div>
                 <ul className="flex flex-col gap-y-4">
-                  {list2.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a className="text-primary" href={item.href}>
-                          {item.name}
-                        </a>
-                      </li>
-                    );
-                  })}
+                 
                 </ul>
               </div>
               {/* list 2 */}
@@ -79,15 +53,7 @@ const Footer = () => {
                   Thông tin
                 </div>
                 <ul className="flex flex-col gap-y-4">
-                  {list3.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a className="text-primary" href={item.href}>
-                          {item.name}
-                        </a>
-                      </li>
-                    );
-                  })}
+                  
                 </ul>
               </div>
               {/* social list */}
