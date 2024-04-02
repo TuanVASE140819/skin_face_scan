@@ -1,9 +1,16 @@
 import React from "react";
 import CountUp from "react-countup";
 import { statisticalData } from "../data";
+import { useTranslation } from "react-i18next";
+
+import user from "../../src/assets/img/human.png";
+import bacsi from "../../src/assets/img/human2.png";
+import light from "../../src/assets/img/den.png";
+import image from "../../src/assets/img/hinh.png";
+import product from "../../src/assets/img/giay.png";
 
 const Statistical = () => {
-  // destructure hero
+  const { t } = useTranslation();
   const { title, subtitle, image } = statisticalData;
   return (
     <>
@@ -18,19 +25,53 @@ const Statistical = () => {
           borderBottomRightRadius: "5rem",
         }}
       >
-        {statisticalData.map((item, index) => {
-          return (
-            <div className="flex items-center py-2  " key={index}>
-              <img src={item.image} alt="logo" className="w-10 h-10" />
-              <div>
-                <div className="text-sm font-bold">
-                  <CountUp end={item.title} />+
-                </div>
-                <div className="text-[0.8rem]">{item.subtitle}</div>
-              </div>
+        {/* 2000,500,2000,45000000, 20 */}
+
+        <div className="flex items-center py-2 pr-6">
+          <img src={user} alt="logo" className="w-10 h-10" />
+          <div>
+            <div className="text-[0.8rem] font-bold">
+              <CountUp end="2000" />+
             </div>
-          );
-        })}
+            <div className="text-[0.6rem]">{t("user")}</div>
+          </div>
+        </div>
+        <div className="flex items-center py-2 pr-6">
+          <img src={bacsi} alt="logo" className="w-10 h-10" />
+          <div>
+            <div className="text-[0.8rem] font-bold">
+              <CountUp end="500" />+
+            </div>
+            <div className="text-[0.6rem]">{t("doctor")}</div>
+          </div>
+        </div>
+        <div className="flex items-center py-2 pr-6">
+          <img src={light} alt="logo" className="w-10 h-10" />
+          <div>
+            <div className="text-[0.8rem] font-bold">
+              <CountUp end="2000" />+
+            </div>
+            <div className="text-[0.6rem]">{t("analyzed_image")}</div>
+          </div>
+        </div>
+        <div className="flex items-center py-2 pr-6">
+          <img src={user} alt="logo" className="w-10 h-10" />
+          <div>
+            <div className="text-[0.8rem] font-bold">
+              <CountUp end="45000000" />+
+            </div>
+            <div className="text-[0.6rem]">{t("application")}</div>
+          </div>
+        </div>
+        <div className="flex items-center py-2 pr-6">
+          <img src={user} alt="logo" className="w-10 h-10" />
+          <div>
+            <div className="text-[0.8rem] font-bold">
+              <CountUp end="20" />+
+            </div>
+            <div className="text-[0.6rem]">{t("patented_product")}</div>
+          </div>
+        </div>
       </section>
       <section className="flex flex-wrap justify-center bg-gray-200 border block md:hidden">
         {/* đừng line màu trắng */}

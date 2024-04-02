@@ -11,6 +11,7 @@ import FooterMB from "../components/Footermb";
 import Statistical from "../components/Statistical";
 import Nav from "../components/Nav";
 import Banner2 from "../components/Banner2";
+import Banner2MB from "../components/Banner2mb";
 import Content from "../components/Info/Content";
 import Product from "../components/Info/Product";
 import News from "../components/Info/News";
@@ -27,7 +28,7 @@ const Information = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <Banner2 />
+      {isMobile ? <Banner2MB /> : <Banner2 />}
       <StatisticalHome />
       <Content />
       <Product />

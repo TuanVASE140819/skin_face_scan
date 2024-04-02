@@ -23,6 +23,7 @@ import Scan from "./page/Scan";
 import Contact from "./page/Contact";
 import Commit from "./page/Commit";
 import Review from "./page/Review";
+import { Helmet } from "react-helmet";
 const App = () => {
   // animate on scroll initialization
   Aos.init({
@@ -35,7 +36,25 @@ const App = () => {
       {/* <Nav /> */}
       <div className="overflow-hidden">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Helmet>
+                  <title>Skin Care - Ứng dụng chăm sóc da thông minh</title>
+                  <meta
+                    name="description"
+                    content="Ứng dụng chăm sóc da thông minh"
+                  />
+                  <meta
+                    name="keywords"
+                    content="chăm sóc da, da đẹp, da sáng, Phân tích da, Ứng dụng phân tích da, Ứng dụng chăm sóc da, Kiểm tra tình trạng da, Ứng dụng kiểm tra da,Ứng dụng tư vấn da, Ứng dụng đánh giá da, Ứng dụng skincare, Ứng dụng công nghệ da ,ng dụng công nghệ skincare"
+                  ></meta>
+                </Helmet>
+                <Home />
+              </>
+            }
+          />
           <Route path="/thong_tin" element={<Information />} />
           <Route path="/bi_quyet_cham_soc_da" element={<News />} />
           <Route path="/gioi_thieu" element={<About />} />

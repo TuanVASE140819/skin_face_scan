@@ -1,13 +1,14 @@
 import React from "react";
 import { aboutData, contentInfoData, ruleData } from "../../data";
-
+import { useTranslation } from "react-i18next";
 const Rule = () => {
+  const { t } = useTranslation();
   return (
     <section className="container mx-auto">
       <div className="p-8 ">
         <h1 className="h3-2 text-orange-500 text-center">
-          Cam kết
-          <span className="text-black"> Của Chúng Tôi</span>
+          {t("content_title_3")}
+          <span className="text-black">{t("content_title_sub_3")}</span>
         </h1>
       </div>
       {/*  danh sách sẽ nằm trên 1 hàng */}

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { aboutData, contentInfoData } from "../data";
 import Hero from "../components/Hero";
 import Banner2 from "../components/Banner2";
+import Banner2MB from "../components/Banner2mb";
 import Statistical from "../components/Statistical";
 import StatisticalHome from "../components/StatisticalHome";
 import About2 from "../components/About2";
@@ -22,8 +23,8 @@ const About = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <Banner2 />
-      <StatisticalHome />
+      {/* {isMobile ? <Banner2MB /> : <Banner2 />}
+      <StatisticalHome /> */}
       <About2 />
       {isMobile ? <FooterMB /> : <Footer />}
     </div>
